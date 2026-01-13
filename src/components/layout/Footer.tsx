@@ -52,9 +52,19 @@ export default function Footer() {
                             <h5 style={{ marginBottom: '1.25rem', fontSize: '1rem' }}>Resources</h5>
                             <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                                 <li><a href="https://github.com/rigour-labs" style={{ color: 'var(--secondary)', fontSize: '0.875rem' }}>GitHub</a></li>
+                                <li><a href="mailto:admin@rigour.run" style={{ color: 'var(--secondary)', fontSize: '0.875rem' }}>Contact: admin@rigour.run</a></li>
                             </ul>
                         </div>
                     </div>
+                </div>
+
+                <div style={{
+                    marginTop: '2rem',
+                    fontSize: '0.875rem',
+                    color: 'var(--secondary)',
+                    opacity: 0.7
+                }}>
+                    All products are powered by the <a href="https://rigour.run" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', textDecoration: 'none' }}>Rigour Open Source Engine</a>.
                 </div>
 
                 <div style={{

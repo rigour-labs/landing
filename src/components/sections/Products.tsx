@@ -3,7 +3,7 @@ export default function Products() {
         {
             title: "TalentLyt",
             category: "SaaS / B2B",
-            description: "A comprehensive AI-driven hiring integrity platform that eliminates interview fraud and ensures a verifiable hiring process.",
+            description: "Our flagship AI-driven hiring integrity platform (also known as RigourGate) that eliminates interview fraud and ensures a verifiable hiring process.",
             link: "https://talentlyt.cloud",
             cta: "Visit TalentLyt",
             color: "var(--primary)",

@@ -57,12 +57,21 @@ export default function Hero() {
                 <p style={{
                     fontSize: '1.25rem',
                     color: 'var(--secondary)',
-                    maxWidth: '600px',
-                    margin: '0 auto 3rem',
+                    maxWidth: '800px',
+                    margin: '0 auto 1.5rem',
                     lineHeight: '1.6'
                 }}>
-                    Rigour Labs is an R&D powerhouse building the infrastructure for verifiable software and high-integrity systems.
+                    Rigour Labs is an R&D powerhouse and the institutional home of <span style={{ color: 'white', fontWeight: '600' }}>RigourGate (TalentLyt)</span>, our flagship AI recruitment integrity platform.
                 </p>
+
+                <div style={{
+                    fontSize: '0.875rem',
+                    color: 'var(--secondary)',
+                    marginBottom: '3rem',
+                    opacity: 0.8
+                }}>
+                    Powered by <a href="https://rigour.run" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', textDecoration: 'none', fontWeight: '500' }}>Rigour OSS</a> — our open-source engine for verifiable code.
+                </div>
 
                 <div style={{
                     display: 'flex',

@@ -1,0 +1,79 @@
+export default function Hero() {
+    return (
+        <section style={{
+            padding: '10rem 0 6rem',
+            textAlign: 'center',
+            position: 'relative',
+            overflow: 'hidden'
+        }}>
+            {/* Background Glow */}
+            <div style={{
+                position: 'absolute',
+                top: '20%',
+                left: '50%',
+                transform: 'translate(-50%, -50%)',
+                width: '600px',
+                height: '400px',
+                background: 'radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, transparent 70%)',
+                filter: 'blur(60px)',
+                zIndex: -1
+            }} />
+
+            <div className="container">
+                <div style={{
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '0.5rem',
+                    padding: '0.5rem 1rem',
+                    borderRadius: '9999px',
+                    background: 'rgba(99, 102, 241, 0.1)',
+                    border: '1px solid rgba(99, 102, 241, 0.2)',
+                    color: 'var(--primary)',
+                    fontSize: '0.875rem',
+                    fontWeight: '600',
+                    marginBottom: '2rem'
+                }}>
+                    <span style={{
+                        width: '8px',
+                        height: '8px',
+                        borderRadius: '50%',
+                        background: 'var(--primary)',
+                        boxShadow: '0 0 10px var(--primary)'
+                    }} />
+                    THE UMBRELLA FOR TRUSTED TECH
+                </div>
+
+                <h1 style={{
+                    fontSize: 'clamp(2.5rem, 8vw, 4.5rem)',
+                    lineHeight: '1.1',
+                    marginBottom: '1.5rem',
+                    maxWidth: '900px',
+                    margin: '0 auto 1.5rem'
+                }}>
+                    Engineering the Future of <br />
+                    <span className="text-gradient">Trust and Transparency</span>
+                </h1>
+
+                <p style={{
+                    fontSize: '1.25rem',
+                    color: 'var(--secondary)',
+                    maxWidth: '600px',
+                    margin: '0 auto 3rem',
+                    lineHeight: '1.6'
+                }}>
+                    Rigour Labs is an R&D powerhouse building the infrastructure for verifiable software and high-integrity systems.
+                </p>
+
+                <div style={{
+                    display: 'flex',
+                    justifyContent: 'center',
+                    gap: '1rem',
+                    flexWrap: 'wrap'
+                }}>
+                    <a href="https://talentlyt.cloud" target="_blank" rel="noopener noreferrer" className="btn-primary">TalentLyt SaaS</a>
+                    <a href="https://rigour.run" target="_blank" rel="noopener noreferrer" className="btn-secondary">Rigour OSS</a>
+                </div>
+            </div>
+        </section>
+    );
+}

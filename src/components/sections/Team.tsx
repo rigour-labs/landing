@@ -3,7 +3,7 @@ export default function Team() {
         {
             name: "Ashutosh Singh",
             role: "Founder & CEO",
-            bio: "Full-stack engineer with 10+ years of experience building scalable systems. Previously led engineering teams at enterprise fintech companies. Passionate about AI governance and building tools that ensure software integrity.",
+            bio: "Systems Architect and Engineering Lead with 13+ years of experience building and scaling AI/ML platforms, cloud-native systems, and high-performance infrastructures. Specializing in bridging advanced LLM research (RAG, evaluation pipelines) with production-grade platforms on AWS/GCP. Delivered 99.9%+ SLA for critical AI/ML workloads, 93% reduction in duplicate API calls, and 85% faster deployments through modernized CI/CD and MLOps pipelines.",
             linkedin: "https://www.linkedin.com/in/erashu212/",
             github: "https://github.com/erashu212",
             image: "/team/ashutosh.jpg"

@@ -5,14 +5,20 @@ export default function Products() {
             category: "SaaS / B2B",
             stage: "Beta",
             stageColor: "#f59e0b",
-            description: "Helps companies verify candidate identity and behavior during remote technical interviews. We use AI to flag suspicious activity in real-time, so hiring teams can make confident decisions. Currently testing with a small group of companies.",
+            description: "Helps companies verify candidate identity and behavior during remote technical interviews. We use AI to flag suspicious activity in real-time, so hiring teams can make confident decisions. In beta since January 2026 with 2 organizations.",
             link: "https://talentlyt.cloud",
             cta: "Visit TalentLyt",
             color: "var(--primary)",
             glow: "var(--primary-glow)",
-            features: ["Real-time Interview Monitoring", "Identity Verification", "Behavior Analysis"],
+            features: ["82 Interviews Monitored", "6,800+ Anomalies Detected", "41% Fraud Flag Rate"],
             techStack: ["Next.js", "Python", "TensorFlow", "GCP"],
-            targetAudience: "HR Teams, Technical Recruiters, Staffing Agencies"
+            targetAudience: "HR Teams, Technical Recruiters, Staffing Agencies",
+            betaStats: {
+                interviews: 82,
+                anomalies: "6,800+",
+                flagRate: "41%",
+                organizations: 2
+            }
         },
         {
             title: "Rigour CLI",
@@ -128,6 +134,33 @@ export default function Products() {
                                             alt="NPM weekly downloads"
                                             style={{ height: '20px' }}
                                         />
+                                    </div>
+                                )}
+
+                                {/* Beta Stats */}
+                                {'betaStats' in product && (
+                                    <div style={{
+                                        display: 'grid',
+                                        gridTemplateColumns: 'repeat(3, 1fr)',
+                                        gap: '0.5rem',
+                                        marginBottom: '1rem',
+                                        padding: '0.75rem',
+                                        background: 'rgba(99, 102, 241, 0.05)',
+                                        borderRadius: '0.5rem',
+                                        border: '1px solid rgba(99, 102, 241, 0.1)'
+                                    }}>
+                                        <div style={{ textAlign: 'center' }}>
+                                            <div style={{ fontSize: '1.25rem', fontWeight: '700', color: 'var(--primary)' }}>82</div>
+                                            <div style={{ fontSize: '0.65rem', color: 'var(--secondary)', textTransform: 'uppercase' }}>Interviews</div>
+                                        </div>
+                                        <div style={{ textAlign: 'center' }}>
+                                            <div style={{ fontSize: '1.25rem', fontWeight: '700', color: 'var(--primary)' }}>6.8K</div>
+                                            <div style={{ fontSize: '0.65rem', color: 'var(--secondary)', textTransform: 'uppercase' }}>Anomalies</div>
+                                        </div>
+                                        <div style={{ textAlign: 'center' }}>
+                                            <div style={{ fontSize: '1.25rem', fontWeight: '700', color: '#f59e0b' }}>41%</div>
+                                            <div style={{ fontSize: '0.65rem', color: 'var(--secondary)', textTransform: 'uppercase' }}>Flagged</div>
+                                        </div>
                                     </div>
                                 )}
 

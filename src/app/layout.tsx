@@ -95,7 +95,7 @@ export default function RootLayout({
       {
         "@type": "Person",
         "name": "Ashutosh Singh",
-        "jobTitle": "Co-founder & CEO",
+        "jobTitle": "Founder",
         "sameAs": "https://www.linkedin.com/in/erashu212/"
       },
       {

@@ -288,7 +288,7 @@ export default function Team() {
                             color: 'var(--primary)',
                             marginBottom: '0.5rem'
                         }}>
-                            Remote
+                            🇮🇳
                         </div>
                         <div style={{
                             color: 'var(--secondary)',
@@ -296,7 +296,7 @@ export default function Team() {
                             textTransform: 'uppercase',
                             letterSpacing: '0.1em'
                         }}>
-                            First Company
+                            Based in India
                         </div>
                     </div>
                 </div>

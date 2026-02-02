@@ -36,7 +36,10 @@ export default function Footer() {
                             RIGOUR LABS
                         </div>
                         <p style={{ color: 'var(--secondary)', fontSize: '0.875rem', lineHeight: '1.6' }}>
-                            Developer tools and SaaS products for code verification and hiring integrity. Built in 2025.
+                            Developer tools and SaaS products for code verification and hiring integrity.
+                        </p>
+                        <p style={{ color: 'var(--secondary)', fontSize: '0.75rem', marginTop: '0.5rem' }}>
+                            Founded 2025 · Based in India
                         </p>
                     </div>
 

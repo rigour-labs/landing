@@ -29,7 +29,8 @@ export default function Products() {
             glow: "rgba(16, 185, 129, 0.2)",
             features: ["Local-only Analysis", "Static Code Checks", "Works with Claude, Cursor, Cline"],
             techStack: ["TypeScript", "Node.js", "MCP Protocol"],
-            targetAudience: "Software Developers using AI coding tools"
+            targetAudience: "Software Developers using AI coding tools",
+            npmBadge: "https://img.shields.io/npm/dw/@rigour-labs/cli.svg?label=weekly%20downloads&color=10b981"
         }
     ];
 
@@ -117,6 +118,18 @@ export default function Products() {
                                 </div>
 
                                 <h3 style={{ fontSize: '2rem', marginBottom: '1rem' }}>{product.title}</h3>
+
+                                {/* NPM Downloads Badge */}
+                                {'npmBadge' in product && (
+                                    <div style={{ marginBottom: '1rem' }}>
+                                        <img
+                                            src={product.npmBadge as string}
+                                            alt="NPM weekly downloads"
+                                            style={{ height: '20px' }}
+                                        />
+                                    </div>
+                                )}
+
                                 <p style={{ color: 'var(--secondary)', lineHeight: '1.7', marginBottom: '1.5rem' }}>
                                     {product.description}
                                 </p>

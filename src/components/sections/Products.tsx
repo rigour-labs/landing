@@ -28,7 +28,7 @@ export default function Products() {
             cta: "Explore Rigour OSS",
             color: "var(--accent-emerald)",
             glow: "rgba(16, 185, 129, 0.2)",
-            features: ["Local-only Analysis", "Static Code Checks", "MCP Server for AI Assistants"],
+            features: ["Local-only Analysis", "Static Code Checks", "Official MCP Server"],
             techStack: ["TypeScript", "Node.js", "MCP Protocol"],
             targetAudience: "Software Developers using AI coding tools",
             npmBadge: "https://img.shields.io/npm/dw/@rigour-labs/cli.svg?label=weekly%20downloads&color=10b981"

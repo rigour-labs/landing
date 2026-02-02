@@ -24,6 +24,7 @@ export const metadata: Metadata = {
   ],
   authors: [
     { name: "Ashutosh Singh", url: "https://www.linkedin.com/in/erashu212/" },
+    { name: "Gaurav Prakash", url: "https://www.linkedin.com/in/gaurav-prakash-910aa9a0/" },
     { name: "Rigour Labs Team" }
   ],
   creator: "Rigour Labs",
@@ -90,12 +91,20 @@ export default function RootLayout({
       "@type": "PostalAddress",
       "addressCountry": "IN"
     },
-    "founder": {
-      "@type": "Person",
-      "name": "Ashutosh Singh",
-      "jobTitle": "Founder & CEO",
-      "sameAs": "https://www.linkedin.com/in/erashu212/"
-    },
+    "founder": [
+      {
+        "@type": "Person",
+        "name": "Ashutosh Singh",
+        "jobTitle": "Co-founder & CEO",
+        "sameAs": "https://www.linkedin.com/in/erashu212/"
+      },
+      {
+        "@type": "Person",
+        "name": "Gaurav Prakash",
+        "jobTitle": "Co-founder",
+        "sameAs": "https://www.linkedin.com/in/gaurav-prakash-910aa9a0/"
+      }
+    ],
     "sameAs": [
       "https://github.com/rigour-labs",
       "https://www.npmjs.com/package/@rigour-labs/cli"

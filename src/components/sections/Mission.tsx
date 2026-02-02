@@ -1,16 +1,16 @@
 export default function Mission() {
     const pillars = [
         {
-            title: "Verifiable Systems",
-            description: "We believe software should be provably correct and its behavior verifiable by third parties without compromising privacy."
+            title: "Code You Can Trust",
+            description: "When AI writes code, someone needs to verify it actually works. We build the tools that check AI-generated code before it ships."
         },
         {
-            title: "Human-AI Integrity",
-            description: "As AI becomes a core part of work, we build the protocols that ensure humans and agents collaborate with radical transparency."
+            title: "Honest Hiring",
+            description: "Remote interviews created new ways to cheat. We help companies verify that candidates are who they say they are."
         },
         {
-            title: "Zero-Telemetry Privacy",
-            description: "Our tools are designed to work locally and securely, putting data ownership back where it belongs: with the user."
+            title: "Your Data Stays Yours",
+            description: "Our CLI runs entirely on your machine. No cloud uploads, no telemetry, no phone-home. Your code never leaves your computer."
         }
     ];
 
@@ -31,14 +31,14 @@ export default function Mission() {
                             lineHeight: '1.7',
                             marginBottom: '2rem'
                         }}>
-                            At Rigour Labs, we don't just build software—we engineer trust. In an era where "vibe coding" and opaque AI processes are becoming the norm, we stand for absolute technical rigour.
+                            AI is changing how we write code and hire people. That's exciting, but it also creates real problems—code that looks right but breaks in production, candidates who aren't who they claim to be.
                         </p>
                         <p style={{
                             fontSize: '1.125rem',
                             color: 'var(--secondary)',
                             lineHeight: '1.7'
                         }}>
-                            Our laboratory researches and develops tools that bridge the gap between innovation and accountability.
+                            We're building practical tools to solve these problems. Not buzzwords, just software that works.
                         </p>
                     </div>
 

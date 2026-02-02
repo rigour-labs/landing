@@ -40,7 +40,7 @@ export default function Hero() {
                         background: 'var(--primary)',
                         boxShadow: '0 0 10px var(--primary)'
                     }} />
-                    THE UMBRELLA FOR TRUSTED TECH
+                    Developer Tools & SaaS
                 </div>
 
                 <h1 style={{
@@ -50,8 +50,8 @@ export default function Hero() {
                     maxWidth: '900px',
                     margin: '0 auto 1.5rem'
                 }}>
-                    Engineering the Future of <br />
-                    <span className="text-gradient">Trust and Transparency</span>
+                    Building Tools for <br />
+                    <span className="text-gradient">Verifiable Software</span>
                 </h1>
 
                 <p style={{
@@ -61,7 +61,7 @@ export default function Hero() {
                     margin: '0 auto 1.5rem',
                     lineHeight: '1.6'
                 }}>
-                    Rigour Labs is an R&D powerhouse and the institutional home of <span style={{ color: 'white', fontWeight: '600' }}>RigourGate (TalentLyt)</span>, our flagship AI recruitment integrity platform.
+                    We build developer tools and SaaS products focused on code quality and hiring integrity. Our main products are <span style={{ color: 'white', fontWeight: '600' }}>TalentLyt</span> (AI interview integrity) and <span style={{ color: 'white', fontWeight: '600' }}>Rigour CLI</span> (code verification).
                 </p>
 
                 <div style={{

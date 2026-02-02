@@ -5,21 +5,21 @@ export default function Products() {
             category: "SaaS / B2B",
             stage: "Beta",
             stageColor: "#f59e0b",
-            description: "Our flagship AI-driven hiring integrity platform (also known as RigourGate) that eliminates interview fraud and ensures a verifiable hiring process. Currently in private beta with select enterprise customers.",
+            description: "Helps companies verify candidate identity and behavior during remote technical interviews. We use AI to flag suspicious activity in real-time, so hiring teams can make confident decisions. Currently testing with a small group of companies.",
             link: "https://talentlyt.cloud",
             cta: "Visit TalentLyt",
             color: "var(--primary)",
             glow: "var(--primary-glow)",
-            features: ["Live Interview Monitoring", "Integrity Auditing", "AI Anomaly Detection"],
+            features: ["Real-time Interview Monitoring", "Identity Verification", "Behavior Analysis"],
             techStack: ["Next.js", "Python", "TensorFlow", "GCP"],
-            targetAudience: "Enterprise HR Teams, Recruiting Agencies"
+            targetAudience: "HR Teams, Technical Recruiters, Staffing Agencies"
         },
         {
             title: "Rigour CLI",
             category: "OSS / Developer Tools",
             stage: "Production",
             stageColor: "#10b981",
-            description: "An open-source framework for building verifiable codebases and ensuring that AI-generated code meets production standards. Available on NPM with active development.",
+            description: "A command-line tool that checks AI-generated code before it goes to production. Runs locally on your machine—no code leaves your computer. Install it from NPM and add it to your workflow in minutes.",
             link: "https://rigour.run",
             docsLink: "https://docs.rigour.run",
             npmLink: "https://www.npmjs.com/package/@rigour-labs/cli",
@@ -27,9 +27,9 @@ export default function Products() {
             cta: "Explore Rigour OSS",
             color: "var(--accent-emerald)",
             glow: "rgba(16, 185, 129, 0.2)",
-            features: ["Zero-Telemetry Gates", "Deep Static Analysis", "MCP Server Integration"],
+            features: ["Local-only Analysis", "Static Code Checks", "Works with Claude, Cursor, Cline"],
             techStack: ["TypeScript", "Node.js", "MCP Protocol"],
-            targetAudience: "Developers, AI Coding Assistants (Claude, Cursor, Cline)"
+            targetAudience: "Software Developers using AI coding tools"
         }
     ];
 
@@ -56,7 +56,7 @@ export default function Products() {
                     </div>
                     <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Our Products</h2>
                     <p style={{ color: 'var(--secondary)', maxWidth: '700px', margin: '0 auto', fontSize: '1.125rem', lineHeight: '1.7' }}>
-                        We engineer tools that protect the integrity of human-AI collaboration and organizational processes. Each product addresses a critical gap in the current tech landscape.
+                        Two products, two problems. TalentLyt tackles interview fraud in remote hiring. Rigour CLI helps developers verify AI-generated code before it ships.
                     </p>
                 </div>
 
@@ -267,7 +267,7 @@ export default function Products() {
                     borderRadius: '1.5rem',
                     textAlign: 'center'
                 }}>
-                    <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>The Problems We Solve</h3>
+                    <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Why We Built These</h3>
                     <div style={{
                         display: 'grid',
                         gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
@@ -275,21 +275,21 @@ export default function Products() {
                         textAlign: 'left'
                     }}>
                         <div>
-                            <h4 style={{ color: 'var(--primary)', marginBottom: '0.75rem', fontSize: '1.1rem' }}>Interview Fraud</h4>
+                            <h4 style={{ color: 'var(--primary)', marginBottom: '0.75rem', fontSize: '1.1rem' }}>Cheating in Remote Interviews</h4>
                             <p style={{ color: 'var(--secondary)', fontSize: '0.9rem', lineHeight: '1.6' }}>
-                                Remote hiring has created new opportunities for fraud. TalentLyt provides real-time integrity verification during technical interviews.
+                                Companies are seeing candidates use hidden help, fake identities, and even proxies during video interviews. It wastes time and leads to bad hires.
                             </p>
                         </div>
                         <div>
-                            <h4 style={{ color: 'var(--accent-emerald)', marginBottom: '0.75rem', fontSize: '1.1rem' }}>AI Code Quality</h4>
+                            <h4 style={{ color: 'var(--accent-emerald)', marginBottom: '0.75rem', fontSize: '1.1rem' }}>AI Code That Breaks</h4>
                             <p style={{ color: 'var(--secondary)', fontSize: '0.9rem', lineHeight: '1.6' }}>
-                                AI coding assistants generate code without engineering standards. Rigour CLI enforces quality gates before code reaches production.
+                                AI assistants write code fast, but they don't always get it right. Without proper checks, buggy code makes it to production.
                             </p>
                         </div>
                         <div>
-                            <h4 style={{ color: '#f59e0b', marginBottom: '0.75rem', fontSize: '1.1rem' }}>Data Privacy</h4>
+                            <h4 style={{ color: '#f59e0b', marginBottom: '0.75rem', fontSize: '1.1rem' }}>Privacy Concerns</h4>
                             <p style={{ color: 'var(--secondary)', fontSize: '0.9rem', lineHeight: '1.6' }}>
-                                Most tools send your code to external servers. Our tools are 100% local-first with zero telemetry - your data never leaves your machine.
+                                Many dev tools upload your code to analyze it. We think that's wrong. Rigour CLI runs 100% on your machine—nothing gets sent anywhere.
                             </p>
                         </div>
                     </div>

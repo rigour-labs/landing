@@ -3,7 +3,7 @@ export default function Team() {
         {
             name: "Ashutosh Singh",
             role: "Founder & CEO",
-            bio: "Systems Architect and Engineering Lead with 13+ years of experience building and scaling AI/ML platforms, cloud-native systems, and high-performance infrastructures. Specializing in bridging advanced LLM research (RAG, evaluation pipelines) with production-grade platforms on AWS/GCP. Delivered 99.9%+ SLA for critical AI/ML workloads, 93% reduction in duplicate API calls, and 85% faster deployments through modernized CI/CD and MLOps pipelines.",
+            bio: "I've spent 13+ years building systems that actually work at scale. Started as a developer, grew into architecture roles, and eventually led engineering teams shipping AI/ML platforms and cloud infrastructure on AWS and GCP. What drives me now is bringing LLM research—things like RAG and evaluation pipelines—into real production environments. Along the way, I've helped teams hit 99.9%+ SLA on critical workloads, cut duplicate API calls by 93%, and speed up deployments by 85%. I started Rigour Labs because I believe we need better tools for verifying AI-generated code and ensuring integrity in hiring.",
             linkedin: "https://www.linkedin.com/in/erashu212/",
             github: "https://github.com/erashu212",
             image: "/team/ashutosh.jpg"
@@ -13,11 +13,11 @@ export default function Team() {
     const advisors = [
         {
             area: "Technical Architecture",
-            description: "Our technical direction is guided by experienced engineers from leading tech companies with expertise in distributed systems and AI/ML infrastructure."
+            description: "We regularly consult with senior engineers who've built distributed systems at scale. Their feedback shapes how we approach infrastructure decisions."
         },
         {
             area: "Product Strategy",
-            description: "We work with seasoned product leaders who have built and scaled developer tools and enterprise SaaS platforms."
+            description: "We work with folks who've shipped developer tools and B2B products before. They help us avoid common pitfalls and stay focused on what matters."
         }
     ];
 
@@ -44,7 +44,7 @@ export default function Team() {
                     </div>
                     <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Our Team</h2>
                     <p style={{ color: 'var(--secondary)', maxWidth: '600px', margin: '0 auto', fontSize: '1.125rem', lineHeight: '1.7' }}>
-                        A dedicated team of engineers and researchers building the future of software integrity and AI governance.
+                        We're engineers who got tired of the lack of good tools for verifying AI code and ensuring hiring integrity. So we're building them ourselves.
                     </p>
                 </div>
 

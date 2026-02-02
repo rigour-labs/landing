@@ -30,7 +30,7 @@ export default function Contact() {
                         lineHeight: '1.7',
                         marginBottom: '3rem'
                     }}>
-                        For inquiries regarding partnerships, institutional verification, or technical collaboration with Rigour Labs.
+                        Want to try TalentLyt beta? Have questions about Rigour CLI? Just want to say hi? Drop us a line.
                     </p>
 
                     <div style={{
@@ -46,7 +46,7 @@ export default function Contact() {
                             fontWeight: '700',
                             color: 'var(--primary)'
                         }}>
-                            Official Administrative Contact
+                            Email Us
                         </div>
                         <a href="mailto:admin@rigour-labs.dev" style={{
                             fontSize: '2rem',

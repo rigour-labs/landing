@@ -36,7 +36,7 @@ export default function Footer() {
                             RIGOUR LABS
                         </div>
                         <p style={{ color: 'var(--secondary)', fontSize: '0.875rem', lineHeight: '1.6' }}>
-                            Building the next generation of high-integrity tech infrastructure. Verified. Transparent. Pure.
+                            Developer tools and SaaS products for code verification and hiring integrity. Built in 2025.
                         </p>
                     </div>
 

@@ -48,9 +48,12 @@ export default function Navbar() {
                     gap: '2rem',
                     alignItems: 'center'
                 }}>
-                    <Link href="https://rigour.run" target="_blank" style={{ color: 'var(--secondary)', fontSize: '0.9rem', fontWeight: '500' }}>Rigour OSS</Link>
-                    <Link href="https://talentlyt.cloud" target="_blank" className="btn-primary" style={{ fontSize: '0.9rem' }}>
-                        TalentLyt SaaS
+                    <Link href="#products" style={{ color: 'var(--secondary)', fontSize: '0.9rem', fontWeight: '500' }}>Products</Link>
+                    <Link href="#team" style={{ color: 'var(--secondary)', fontSize: '0.9rem', fontWeight: '500' }}>Team</Link>
+                    <Link href="#mission" style={{ color: 'var(--secondary)', fontSize: '0.9rem', fontWeight: '500' }}>Mission</Link>
+                    <Link href="#contact" style={{ color: 'var(--secondary)', fontSize: '0.9rem', fontWeight: '500' }}>Contact</Link>
+                    <Link href="https://rigour.run" target="_blank" className="btn-primary" style={{ fontSize: '0.9rem' }}>
+                        Rigour OSS
                     </Link>
                 </div>
             </div>

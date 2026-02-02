@@ -4,7 +4,7 @@ export default function Team() {
             name: "Ashutosh Singh",
             role: "Founder & CEO",
             bio: "Full-stack engineer with 10+ years of experience building scalable systems. Previously led engineering teams at enterprise fintech companies. Passionate about AI governance and building tools that ensure software integrity.",
-            linkedin: "https://www.linkedin.com/in/AshutoshSingh",
+            linkedin: "https://www.linkedin.com/in/erashu212/",
             github: "https://github.com/erashu212",
             image: "/team/ashutosh.jpg"
         }

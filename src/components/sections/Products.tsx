@@ -5,7 +5,7 @@ export default function Products() {
             category: "SaaS / B2B",
             stage: "Beta",
             stageColor: "#f59e0b",
-            description: "Helps companies verify candidate identity and behavior during remote technical interviews. We use AI to flag suspicious activity in real-time, so hiring teams can make confident decisions. In beta since January 2026 with 2 organizations.",
+            description: "Helps companies verify candidate identity and behavior during remote technical interviews. We use AI to flag suspicious activity in real-time, so hiring teams can make confident decisions. Currently in free beta with 2 organizations—no payments yet, just building and learning.",
             link: "https://talentlyt.cloud",
             cta: "Visit TalentLyt",
             color: "var(--primary)",

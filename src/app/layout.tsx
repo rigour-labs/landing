@@ -1,5 +1,13 @@
 import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
+
+const inter = Inter({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-inter",
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://rigour-labs.dev"),
@@ -20,7 +28,20 @@ export const metadata: Metadata = {
     "developer tools India",
     "npm code checker",
     "interview monitoring",
-    "candidate verification"
+    "candidate verification",
+    "AI generated code checker",
+    "code review automation",
+    "static code analysis",
+    "interview proctoring",
+    "remote interview security",
+    "MCP server",
+    "Model Context Protocol",
+    "GitHub App code review",
+    "zero telemetry code analysis",
+    "local code verification",
+    "hiring fraud prevention",
+    "technical interview integrity",
+    "AI code quality gate"
   ],
   authors: [
     { name: "Ashutosh Singh", url: "https://www.linkedin.com/in/erashu212/" },
@@ -160,10 +181,109 @@ export default function RootLayout({
     }
   ];
 
+  // WebSite schema for sitelinks search
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Rigour Labs",
+    "url": "https://rigour-labs.dev",
+    "description": "Developer tools and SaaS products for code verification and hiring integrity",
+    "publisher": {
+      "@type": "Organization",
+      "name": "Rigour Labs"
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://rigour-labs.dev/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
+  // FAQ schema for common questions
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is Rigour CLI?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rigour CLI is an open-source command-line tool that checks AI-generated code before it goes to production. It runs 100% locally on your machine with zero telemetry—no code is sent anywhere."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is TalentLyt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "TalentLyt is an AI-powered SaaS platform that helps companies verify candidate identity and behavior during remote technical interviews. It detects suspicious activity in real-time to prevent interview fraud."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is Rigour CLI free to use?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes, Rigour CLI is completely free and open-source under the MIT License. You can install it via npm: npm install -g @rigour-labs/cli"
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Rigour CLI send my code to external servers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No. Rigour CLI has a zero-telemetry policy. All code analysis happens locally on your machine. Nothing is ever sent to external servers."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Where is Rigour Labs based?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Rigour Labs was founded in 2025 and is based in India."
+        }
+      }
+    ]
+  };
+
+  // BreadcrumbList for navigation
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://rigour-labs.dev"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Products",
+        "item": "https://rigour-labs.dev/#products"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Team",
+        "item": "https://rigour-labs.dev/#team"
+      }
+    ]
+  };
+
   return (
-    <html lang="en">
+    <html lang="en" className={inter.variable}>
       <head>
         <link rel="canonical" href="https://rigour-labs.dev" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
+        <link rel="icon" href="/icon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#6366f1" />
+        <meta name="geo.region" content="IN" />
+        <meta name="geo.placename" content="India" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
@@ -172,9 +292,22 @@ export default function RootLayout({
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(softwareSchema) }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+        />
       </head>
       <body>
         {children}
+        <Analytics />
       </body>
     </html>
   );

@@ -1,10 +1,11 @@
+/* eslint-disable @next/next/no-img-element */
 export default function Products() {
     const products = [
         {
             title: "TalentLyt",
             category: "SaaS / B2B",
             stage: "Beta",
-            stageColor: "#f59e0b",
+            stageColor: "#fbbf24",
             description: "Helps companies verify candidate identity and behavior during remote technical interviews. We use AI to flag suspicious activity in real-time, so hiring teams can make confident decisions. Currently in free beta with 2 organizations—no payments yet, just building and learning.",
             link: "https://talentlyt.cloud",
             cta: "Visit TalentLyt",
@@ -24,7 +25,7 @@ export default function Products() {
             title: "Rigour CLI",
             category: "OSS / Developer Tools",
             stage: "Production",
-            stageColor: "#10b981",
+            stageColor: "#34d399",
             description: "A command-line tool that checks AI-generated code before it goes to production. Runs locally on your machine—no code leaves your computer. Install it from NPM and add it to your workflow in minutes.",
             link: "https://rigour.run",
             docsLink: "https://docs.rigour.run",
@@ -34,7 +35,7 @@ export default function Products() {
             mcpRegistryLink: "https://github.com/mcp?search=rigour",
             cta: "Explore Rigour OSS",
             color: "var(--accent-emerald)",
-            glow: "rgba(16, 185, 129, 0.2)",
+            glow: "rgba(52, 211, 153, 0.2)",
             features: ["Local-only Analysis", "Static Code Checks", "Official MCP Server"],
             techStack: ["TypeScript", "Node.js", "MCP Protocol"],
             targetAudience: "Software Developers using AI coding tools",
@@ -43,17 +44,17 @@ export default function Products() {
     ];
 
     return (
-        <section id="products" style={{ padding: '8rem 0' }}>
+        <section id="products" aria-labelledby="products-heading" style={{ padding: 'clamp(4rem, 8vw, 8rem) 0' }}>
             <div className="container">
-                <div style={{ textAlign: 'center', marginBottom: '5rem' }}>
-                    <div style={{
+                <div style={{ textAlign: 'center', marginBottom: 'clamp(2.5rem, 5vw, 5rem)' }}>
+                    <span style={{
                         display: 'inline-flex',
                         alignItems: 'center',
                         gap: '0.5rem',
                         padding: '0.5rem 1rem',
                         borderRadius: '9999px',
-                        background: 'rgba(99, 102, 241, 0.1)',
-                        border: '1px solid rgba(99, 102, 241, 0.2)',
+                        background: 'rgba(129, 140, 248, 0.1)',
+                        border: '1px solid rgba(129, 140, 248, 0.2)',
                         color: 'var(--primary)',
                         fontSize: '0.75rem',
                         fontWeight: '700',
@@ -62,36 +63,36 @@ export default function Products() {
                         marginBottom: '1.5rem'
                     }}>
                         What We Build
-                    </div>
-                    <h2 style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>Our Products</h2>
-                    <p style={{ color: 'var(--secondary)', maxWidth: '700px', margin: '0 auto', fontSize: '1.125rem', lineHeight: '1.7' }}>
+                    </span>
+                    <h2 id="products-heading" style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginBottom: '1rem' }}>Our Products</h2>
+                    <p style={{ color: 'var(--secondary)', maxWidth: '700px', margin: '0 auto', fontSize: 'clamp(1rem, 2vw, 1.125rem)', lineHeight: '1.7' }}>
                         Two products, two problems. TalentLyt tackles interview fraud in remote hiring. Rigour CLI helps developers verify AI-generated code before it ships.
                     </p>
                 </div>
 
                 <div style={{
                     display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(400px, 1fr))',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 350px), 1fr))',
                     gap: '2rem'
                 }}>
                     {products.map((product, index) => (
-                        <div key={index} className="glass" style={{
-                            padding: '2.5rem',
+                        <article key={index} className="glass" style={{
+                            padding: 'clamp(1.5rem, 3vw, 2.5rem)',
                             transition: 'transform 0.3s ease, border-color 0.3s ease',
                             display: 'flex',
                             flexDirection: 'column',
-                            justifyContent: 'space-between',
-                            cursor: 'default'
+                            justifyContent: 'space-between'
                         }}>
                             <div>
-                                {/* Header with Category and Stage */}
                                 <div style={{
                                     display: 'flex',
                                     justifyContent: 'space-between',
                                     alignItems: 'center',
-                                    marginBottom: '1.5rem'
+                                    marginBottom: '1.5rem',
+                                    flexWrap: 'wrap',
+                                    gap: '0.5rem'
                                 }}>
-                                    <div style={{
+                                    <span style={{
                                         color: product.color,
                                         fontSize: '0.75rem',
                                         fontWeight: '700',
@@ -107,9 +108,9 @@ export default function Products() {
                                             borderRadius: '50%',
                                             background: product.color,
                                             boxShadow: `0 0 10px ${product.color}`
-                                        }} />
+                                        }} aria-hidden="true" />
                                         {product.category}
-                                    </div>
+                                    </span>
                                     <span style={{
                                         padding: '0.25rem 0.75rem',
                                         borderRadius: '9999px',
@@ -125,20 +126,21 @@ export default function Products() {
                                     </span>
                                 </div>
 
-                                <h3 style={{ fontSize: '2rem', marginBottom: '1rem' }}>{product.title}</h3>
+                                <h3 style={{ fontSize: 'clamp(1.5rem, 3vw, 2rem)', marginBottom: '1rem' }}>{product.title}</h3>
 
-                                {/* NPM Downloads Badge */}
                                 {'npmBadge' in product && (
                                     <div style={{ marginBottom: '1rem' }}>
                                         <img
                                             src={product.npmBadge as string}
-                                            alt="NPM weekly downloads"
-                                            style={{ height: '20px' }}
+                                            alt={`NPM weekly downloads for ${product.title}`}
+                                            width={160}
+                                            height={20}
+                                            loading="lazy"
+                                            style={{ height: '20px', width: 'auto' }}
                                         />
                                     </div>
                                 )}
 
-                                {/* Beta Stats */}
                                 {'betaStats' in product && (
                                     <div style={{
                                         display: 'grid',
@@ -146,30 +148,35 @@ export default function Products() {
                                         gap: '0.5rem',
                                         marginBottom: '1rem',
                                         padding: '0.75rem',
-                                        background: 'rgba(99, 102, 241, 0.05)',
+                                        background: 'rgba(129, 140, 248, 0.05)',
                                         borderRadius: '0.5rem',
-                                        border: '1px solid rgba(99, 102, 241, 0.1)'
-                                    }}>
-                                        <div style={{ textAlign: 'center' }}>
+                                        border: '1px solid rgba(129, 140, 248, 0.1)'
+                                    }} role="list" aria-label="Beta statistics">
+                                        <div style={{ textAlign: 'center' }} role="listitem">
                                             <div style={{ fontSize: '1.25rem', fontWeight: '700', color: 'var(--primary)' }}>82</div>
                                             <div style={{ fontSize: '0.65rem', color: 'var(--secondary)', textTransform: 'uppercase' }}>Interviews</div>
                                         </div>
-                                        <div style={{ textAlign: 'center' }}>
+                                        <div style={{ textAlign: 'center' }} role="listitem">
                                             <div style={{ fontSize: '1.25rem', fontWeight: '700', color: 'var(--primary)' }}>6.8K</div>
                                             <div style={{ fontSize: '0.65rem', color: 'var(--secondary)', textTransform: 'uppercase' }}>Anomalies</div>
                                         </div>
-                                        <div style={{ textAlign: 'center' }}>
-                                            <div style={{ fontSize: '1.25rem', fontWeight: '700', color: '#f59e0b' }}>41%</div>
+                                        <div style={{ textAlign: 'center' }} role="listitem">
+                                            <div style={{ fontSize: '1.25rem', fontWeight: '700', color: '#fbbf24' }}>41%</div>
                                             <div style={{ fontSize: '0.65rem', color: 'var(--secondary)', textTransform: 'uppercase' }}>Flagged</div>
                                         </div>
                                     </div>
                                 )}
 
                                 <p style={{ color: 'var(--secondary)', lineHeight: '1.7', marginBottom: '1.5rem' }}>
-                                    {product.description}
+                                    {product.title === 'TalentLyt' ? (
+                                        <>
+                                            Helps companies verify candidate identity and behavior during remote technical interviews. We use AI to flag suspicious activity in real-time, so hiring teams can make confident decisions. Currently in free beta with 2 organizations—<span style={{ color: 'white', fontWeight: '500' }}>no payments yet, just building and learning.</span>
+                                        </>
+                                    ) : (
+                                        product.description
+                                    )}
                                 </p>
 
-                                {/* Target Audience */}
                                 <div style={{
                                     marginBottom: '1.5rem',
                                     padding: '1rem',
@@ -177,59 +184,62 @@ export default function Products() {
                                     borderRadius: '0.75rem',
                                     border: '1px solid rgba(255, 255, 255, 0.05)'
                                 }}>
-                                    <div style={{
+                                    <h4 style={{
                                         fontSize: '0.7rem',
                                         textTransform: 'uppercase',
                                         letterSpacing: '0.1em',
                                         color: 'var(--secondary)',
-                                        marginBottom: '0.5rem'
+                                        marginBottom: '0.5rem',
+                                        fontWeight: '600'
                                     }}>
                                         Target Audience
-                                    </div>
-                                    <div style={{ color: '#e2e8f0', fontSize: '0.9rem' }}>
+                                    </h4>
+                                    <p style={{ color: '#e2e8f0', fontSize: '0.9rem', margin: 0 }}>
                                         {product.targetAudience}
-                                    </div>
+                                    </p>
                                 </div>
 
-                                {/* Features */}
                                 <div style={{ marginBottom: '1.5rem' }}>
-                                    <div style={{
+                                    <h4 style={{
                                         fontSize: '0.7rem',
                                         textTransform: 'uppercase',
                                         letterSpacing: '0.1em',
                                         color: 'var(--secondary)',
-                                        marginBottom: '0.75rem'
+                                        marginBottom: '0.75rem',
+                                        fontWeight: '600'
                                     }}>
                                         Key Features
-                                    </div>
-                                    {product.features.map((feature, fIndex) => (
-                                        <div key={fIndex} style={{
-                                            display: 'flex',
-                                            alignItems: 'center',
-                                            gap: '0.75rem',
-                                            marginBottom: '0.5rem',
-                                            fontSize: '0.9rem',
-                                            color: '#cbd5e1'
-                                        }}>
-                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={product.color} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                                                <polyline points="20 6 9 17 4 12"></polyline>
-                                            </svg>
-                                            {feature}
-                                        </div>
-                                    ))}
+                                    </h4>
+                                    <ul style={{ listStyle: 'none', padding: 0, margin: 0 }}>
+                                        {product.features.map((feature, fIndex) => (
+                                            <li key={fIndex} style={{
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                gap: '0.75rem',
+                                                marginBottom: '0.5rem',
+                                                fontSize: '0.9rem',
+                                                color: '#cbd5e1'
+                                            }}>
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke={product.color} strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+                                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                                </svg>
+                                                {feature}
+                                            </li>
+                                        ))}
+                                    </ul>
                                 </div>
 
-                                {/* Tech Stack */}
                                 <div style={{ marginBottom: '2rem' }}>
-                                    <div style={{
+                                    <h4 style={{
                                         fontSize: '0.7rem',
                                         textTransform: 'uppercase',
                                         letterSpacing: '0.1em',
                                         color: 'var(--secondary)',
-                                        marginBottom: '0.75rem'
+                                        marginBottom: '0.75rem',
+                                        fontWeight: '600'
                                     }}>
                                         Tech Stack
-                                    </div>
+                                    </h4>
                                     <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
                                         {product.techStack.map((tech, tIndex) => (
                                             <span key={tIndex} style={{
@@ -237,7 +247,7 @@ export default function Products() {
                                                 background: 'rgba(255, 255, 255, 0.05)',
                                                 borderRadius: '0.375rem',
                                                 fontSize: '0.75rem',
-                                                color: '#94a3b8',
+                                                color: '#cbd5e1',
                                                 border: '1px solid rgba(255, 255, 255, 0.1)'
                                             }}>
                                                 {tech}
@@ -247,8 +257,7 @@ export default function Products() {
                                 </div>
                             </div>
 
-                            {/* Action Buttons */}
-                            <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                            <nav aria-label={`${product.title} links`} style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
                                 <a href={product.link} target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{
                                     textAlign: 'center',
                                     borderColor: product.color,
@@ -257,6 +266,7 @@ export default function Products() {
                                     boxShadow: `inset 0 0 10px ${product.glow}`
                                 }}>
                                     {product.cta}
+                                    <span className="sr-only"> (opens in new tab)</span>
                                 </a>
                                 {'docsLink' in product && (
                                     <>
@@ -264,41 +274,53 @@ export default function Products() {
                                             <a href={product.docsLink} target="_blank" rel="noopener noreferrer" style={{
                                                 flex: 1,
                                                 textAlign: 'center',
-                                                padding: '0.5rem',
+                                                padding: '0.625rem',
                                                 background: 'rgba(255, 255, 255, 0.03)',
                                                 border: '1px solid rgba(255, 255, 255, 0.1)',
                                                 borderRadius: '0.375rem',
                                                 color: 'var(--secondary)',
                                                 fontSize: '0.8rem',
-                                                transition: 'all 0.2s ease'
+                                                transition: 'all 0.2s ease',
+                                                minHeight: '44px',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center'
                                             }}>
-                                                Docs
+                                                Documentation
                                             </a>
                                             <a href={product.npmLink} target="_blank" rel="noopener noreferrer" style={{
                                                 flex: 1,
                                                 textAlign: 'center',
-                                                padding: '0.5rem',
+                                                padding: '0.625rem',
                                                 background: 'rgba(255, 255, 255, 0.03)',
                                                 border: '1px solid rgba(255, 255, 255, 0.1)',
                                                 borderRadius: '0.375rem',
                                                 color: 'var(--secondary)',
                                                 fontSize: '0.8rem',
-                                                transition: 'all 0.2s ease'
+                                                transition: 'all 0.2s ease',
+                                                minHeight: '44px',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center'
                                             }}>
-                                                NPM
+                                                NPM Package
                                             </a>
                                             <a href={product.githubLink} target="_blank" rel="noopener noreferrer" style={{
                                                 flex: 1,
                                                 textAlign: 'center',
-                                                padding: '0.5rem',
+                                                padding: '0.625rem',
                                                 background: 'rgba(255, 255, 255, 0.03)',
                                                 border: '1px solid rgba(255, 255, 255, 0.1)',
                                                 borderRadius: '0.375rem',
                                                 color: 'var(--secondary)',
                                                 fontSize: '0.8rem',
-                                                transition: 'all 0.2s ease'
+                                                transition: 'all 0.2s ease',
+                                                minHeight: '44px',
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center'
                                             }}>
-                                                GitHub
+                                                Source Code
                                             </a>
                                         </div>
                                         <div style={{ display: 'flex', gap: '0.5rem' }}>
@@ -309,19 +331,20 @@ export default function Products() {
                                                     alignItems: 'center',
                                                     justifyContent: 'center',
                                                     gap: '0.5rem',
-                                                    padding: '0.5rem',
-                                                    background: 'rgba(99, 102, 241, 0.1)',
-                                                    border: '1px solid rgba(99, 102, 241, 0.3)',
+                                                    padding: '0.625rem',
+                                                    background: 'rgba(129, 140, 248, 0.1)',
+                                                    border: '1px solid rgba(129, 140, 248, 0.3)',
                                                     borderRadius: '0.375rem',
                                                     color: 'var(--primary)',
                                                     fontSize: '0.75rem',
                                                     fontWeight: '600',
-                                                    transition: 'all 0.2s ease'
+                                                    transition: 'all 0.2s ease',
+                                                    minHeight: '44px'
                                                 }}>
-                                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true">
                                                         <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
                                                     </svg>
-                                                    MCP
+                                                    MCP Server
                                                 </a>
                                             )}
                                             {'githubAppLink' in product && (
@@ -331,16 +354,17 @@ export default function Products() {
                                                     alignItems: 'center',
                                                     justifyContent: 'center',
                                                     gap: '0.5rem',
-                                                    padding: '0.5rem',
-                                                    background: 'rgba(16, 185, 129, 0.1)',
-                                                    border: '1px solid rgba(16, 185, 129, 0.3)',
+                                                    padding: '0.625rem',
+                                                    background: 'rgba(52, 211, 153, 0.1)',
+                                                    border: '1px solid rgba(52, 211, 153, 0.3)',
                                                     borderRadius: '0.375rem',
                                                     color: 'var(--accent-emerald)',
                                                     fontSize: '0.75rem',
                                                     fontWeight: '600',
-                                                    transition: 'all 0.2s ease'
+                                                    transition: 'all 0.2s ease',
+                                                    minHeight: '44px'
                                                 }}>
-                                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                                                    <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                                                         <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
                                                     </svg>
                                                     GitHub App
@@ -349,24 +373,23 @@ export default function Products() {
                                         </div>
                                     </>
                                 )}
-                            </div>
-                        </div>
+                            </nav>
+                        </article>
                     ))}
                 </div>
 
-                {/* Problem Statement */}
                 <div style={{
-                    marginTop: '5rem',
-                    padding: '3rem',
-                    background: 'rgba(99, 102, 241, 0.03)',
-                    border: '1px solid rgba(99, 102, 241, 0.1)',
+                    marginTop: 'clamp(2.5rem, 5vw, 5rem)',
+                    padding: 'clamp(1.5rem, 3vw, 3rem)',
+                    background: 'rgba(129, 140, 248, 0.03)',
+                    border: '1px solid rgba(129, 140, 248, 0.1)',
                     borderRadius: '1.5rem',
                     textAlign: 'center'
                 }}>
-                    <h3 style={{ fontSize: '1.5rem', marginBottom: '1.5rem' }}>Why We Built These</h3>
+                    <h3 style={{ fontSize: 'clamp(1.25rem, 2.5vw, 1.5rem)', marginBottom: '1.5rem' }}>Why We Built These</h3>
                     <div style={{
                         display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 250px), 1fr))',
                         gap: '2rem',
                         textAlign: 'left'
                     }}>
@@ -379,13 +402,13 @@ export default function Products() {
                         <div>
                             <h4 style={{ color: 'var(--accent-emerald)', marginBottom: '0.75rem', fontSize: '1.1rem' }}>AI Code That Breaks</h4>
                             <p style={{ color: 'var(--secondary)', fontSize: '0.9rem', lineHeight: '1.6' }}>
-                                AI assistants write code fast, but they don't always get it right. Without proper checks, buggy code makes it to production.
+                                AI assistants write code fast, but they don&apos;t always get it right. Without proper checks, buggy code makes it to production.
                             </p>
                         </div>
                         <div>
-                            <h4 style={{ color: '#f59e0b', marginBottom: '0.75rem', fontSize: '1.1rem' }}>Privacy Concerns</h4>
+                            <h4 style={{ color: '#fbbf24', marginBottom: '0.75rem', fontSize: '1.1rem' }}>Privacy Concerns</h4>
                             <p style={{ color: 'var(--secondary)', fontSize: '0.9rem', lineHeight: '1.6' }}>
-                                Many dev tools upload your code to analyze it. We think that's wrong. Rigour CLI runs 100% on your machine—nothing gets sent anywhere.
+                                Many dev tools upload your code to analyze it. We think that&apos;s wrong. Rigour CLI runs 100% on your machine—nothing gets sent anywhere.
                             </p>
                         </div>
                     </div>

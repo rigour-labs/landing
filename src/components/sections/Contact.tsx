@@ -1,45 +1,45 @@
 export default function Contact() {
     return (
-        <section id="contact" style={{ padding: '8rem 0' }}>
+        <section id="contact" aria-labelledby="contact-heading" style={{ padding: 'clamp(4rem, 8vw, 8rem) 0' }}>
             <div className="container" style={{ textAlign: 'center' }}>
                 <div style={{
                     maxWidth: '800px',
                     margin: '0 auto',
-                    padding: '4rem',
+                    padding: 'clamp(2rem, 4vw, 4rem)',
                     borderRadius: '24px',
-                    background: 'rgba(99, 102, 241, 0.03)',
-                    border: '1px solid rgba(99, 102, 241, 0.1)',
+                    background: 'rgba(129, 140, 248, 0.03)',
+                    border: '1px solid rgba(129, 140, 248, 0.1)',
                     position: 'relative',
                     overflow: 'hidden'
                 }}>
-                    {/* Decorative element */}
                     <div style={{
                         position: 'absolute',
                         top: '-50px',
                         right: '-50px',
-                        width: '150px',
-                        height: '150px',
-                        background: 'radial-gradient(circle, rgba(99, 102, 241, 0.1) 0%, transparent 70%)',
+                        width: 'min(150px, 30vw)',
+                        height: 'min(150px, 30vw)',
+                        background: 'radial-gradient(circle, rgba(129, 140, 248, 0.1) 0%, transparent 70%)',
                         filter: 'blur(30px)',
-                    }} />
+                    }} aria-hidden="true" />
 
-                    <h2 style={{ fontSize: '2.5rem', marginBottom: '1.5rem' }}>Get in Touch</h2>
+                    <h2 id="contact-heading" style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginBottom: '1.5rem' }}>Get in Touch</h2>
                     <p style={{
                         color: 'var(--secondary)',
-                        fontSize: '1.125rem',
+                        fontSize: 'clamp(1rem, 2vw, 1.125rem)',
                         lineHeight: '1.7',
-                        marginBottom: '3rem'
+                        marginBottom: 'clamp(1.5rem, 3vw, 3rem)'
                     }}>
                         Want to try TalentLyt beta? Have questions about Rigour CLI? Just want to say hi? Drop us a line.
                     </p>
 
-                    <div style={{
+                    <address style={{
                         display: 'inline-flex',
                         flexDirection: 'column',
                         alignItems: 'center',
-                        gap: '1rem'
+                        gap: '1rem',
+                        fontStyle: 'normal'
                     }}>
-                        <div style={{
+                        <span style={{
                             fontSize: '0.875rem',
                             textTransform: 'uppercase',
                             letterSpacing: '0.1em',
@@ -47,19 +47,24 @@ export default function Contact() {
                             color: 'var(--primary)'
                         }}>
                             Email Us
-                        </div>
-                        <a href="mailto:admin@rigour-labs.dev" style={{
-                            fontSize: '2rem',
-                            color: 'white',
-                            textDecoration: 'none',
-                            fontWeight: '600',
-                            borderBottom: '2px solid var(--primary)',
-                            paddingBottom: '4px',
-                            transition: 'color 0.3s ease'
-                        }} className="contact-link">
+                        </span>
+                        <a
+                            href="mailto:admin@rigour-labs.dev"
+                            aria-label="Send email to admin@rigour-labs.dev"
+                            style={{
+                                fontSize: 'clamp(1.25rem, 3vw, 2rem)',
+                                color: 'white',
+                                textDecoration: 'underline',
+                                textUnderlineOffset: '4px',
+                                textDecorationColor: 'var(--primary)',
+                                fontWeight: '600',
+                                transition: 'color 0.3s ease',
+                                wordBreak: 'break-word'
+                            }}
+                        >
                             admin@rigour-labs.dev
                         </a>
-                    </div>
+                    </address>
                 </div>
             </div>
         </section>

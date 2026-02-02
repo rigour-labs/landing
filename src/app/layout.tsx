@@ -108,7 +108,8 @@ export default function RootLayout({
     "sameAs": [
       "https://github.com/rigour-labs",
       "https://www.npmjs.com/package/@rigour-labs/cli",
-      "https://github.com/mcp?search=rigour"
+      "https://github.com/mcp?search=rigour",
+      "https://github.com/apps/rigour-bot"
     ],
     "contactPoint": {
       "@type": "ContactPoint",

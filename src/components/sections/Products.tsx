@@ -24,7 +24,7 @@ export default function Products() {
             docsLink: "https://docs.rigour.run",
             npmLink: "https://www.npmjs.com/package/@rigour-labs/cli",
             githubLink: "https://github.com/rigour-labs/rigour",
-            mcpRegistryLink: "https://registry.modelcontextprotocol.io/?q=rigour",
+            mcpRegistryLink: "https://github.com/mcp?search=rigour",
             cta: "Explore Rigour OSS",
             color: "var(--accent-emerald)",
             glow: "rgba(16, 185, 129, 0.2)",

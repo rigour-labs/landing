@@ -24,10 +24,11 @@ export default function Products() {
             docsLink: "https://docs.rigour.run",
             npmLink: "https://www.npmjs.com/package/@rigour-labs/cli",
             githubLink: "https://github.com/rigour-labs/rigour",
+            mcpRegistryLink: "https://registry.modelcontextprotocol.io/?q=rigour",
             cta: "Explore Rigour OSS",
             color: "var(--accent-emerald)",
             glow: "rgba(16, 185, 129, 0.2)",
-            features: ["Local-only Analysis", "Static Code Checks", "Works with Claude, Cursor, Cline"],
+            features: ["Local-only Analysis", "Static Code Checks", "MCP Server for AI Assistants"],
             techStack: ["TypeScript", "Node.js", "MCP Protocol"],
             targetAudience: "Software Developers using AI coding tools",
             npmBadge: "https://img.shields.io/npm/dw/@rigour-labs/cli.svg?label=weekly%20downloads&color=10b981"
@@ -224,47 +225,70 @@ export default function Products() {
                                     {product.cta}
                                 </a>
                                 {'docsLink' in product && (
-                                    <div style={{ display: 'flex', gap: '0.5rem' }}>
-                                        <a href={product.docsLink} target="_blank" rel="noopener noreferrer" style={{
-                                            flex: 1,
-                                            textAlign: 'center',
-                                            padding: '0.5rem',
-                                            background: 'rgba(255, 255, 255, 0.03)',
-                                            border: '1px solid rgba(255, 255, 255, 0.1)',
-                                            borderRadius: '0.375rem',
-                                            color: 'var(--secondary)',
-                                            fontSize: '0.8rem',
-                                            transition: 'all 0.2s ease'
-                                        }}>
-                                            Documentation
-                                        </a>
-                                        <a href={product.npmLink} target="_blank" rel="noopener noreferrer" style={{
-                                            flex: 1,
-                                            textAlign: 'center',
-                                            padding: '0.5rem',
-                                            background: 'rgba(255, 255, 255, 0.03)',
-                                            border: '1px solid rgba(255, 255, 255, 0.1)',
-                                            borderRadius: '0.375rem',
-                                            color: 'var(--secondary)',
-                                            fontSize: '0.8rem',
-                                            transition: 'all 0.2s ease'
-                                        }}>
-                                            NPM Package
-                                        </a>
-                                        <a href={product.githubLink} target="_blank" rel="noopener noreferrer" style={{
-                                            flex: 1,
-                                            textAlign: 'center',
-                                            padding: '0.5rem',
-                                            background: 'rgba(255, 255, 255, 0.03)',
-                                            border: '1px solid rgba(255, 255, 255, 0.1)',
-                                            borderRadius: '0.375rem',
-                                            color: 'var(--secondary)',
-                                            fontSize: '0.8rem',
-                                            transition: 'all 0.2s ease'
-                                        }}>
-                                            GitHub
-                                        </a>
-                                    </div>
+                                    <>
+                                        <div style={{ display: 'flex', gap: '0.5rem' }}>
+                                            <a href={product.docsLink} target="_blank" rel="noopener noreferrer" style={{
+                                                flex: 1,
+                                                textAlign: 'center',
+                                                padding: '0.5rem',
+                                                background: 'rgba(255, 255, 255, 0.03)',
+                                                border: '1px solid rgba(255, 255, 255, 0.1)',
+                                                borderRadius: '0.375rem',
+                                                color: 'var(--secondary)',
+                                                fontSize: '0.8rem',
+                                                transition: 'all 0.2s ease'
+                                            }}>
+                                                Docs
+                                            </a>
+                                            <a href={product.npmLink} target="_blank" rel="noopener noreferrer" style={{
+                                                flex: 1,
+                                                textAlign: 'center',
+                                                padding: '0.5rem',
+                                                background: 'rgba(255, 255, 255, 0.03)',
+                                                border: '1px solid rgba(255, 255, 255, 0.1)',
+                                                borderRadius: '0.375rem',
+                                                color: 'var(--secondary)',
+                                                fontSize: '0.8rem',
+                                                transition: 'all 0.2s ease'
+                                            }}>
+                                                NPM
+                                            </a>
+                                            <a href={product.githubLink} target="_blank" rel="noopener noreferrer" style={{
+                                                flex: 1,
+                                                textAlign: 'center',
+                                                padding: '0.5rem',
+                                                background: 'rgba(255, 255, 255, 0.03)',
+                                                border: '1px solid rgba(255, 255, 255, 0.1)',
+                                                borderRadius: '0.375rem',
+                                                color: 'var(--secondary)',
+                                                fontSize: '0.8rem',
+                                                transition: 'all 0.2s ease'
+                                            }}>
+                                                GitHub
+                                            </a>
+                                        </div>
+                                        {'mcpRegistryLink' in product && (
+                                            <a href={product.mcpRegistryLink as string} target="_blank" rel="noopener noreferrer" style={{
+                                                display: 'flex',
+                                                alignItems: 'center',
+                                                justifyContent: 'center',
+                                                gap: '0.5rem',
+                                                padding: '0.5rem',
+                                                background: 'rgba(99, 102, 241, 0.1)',
+                                                border: '1px solid rgba(99, 102, 241, 0.3)',
+                                                borderRadius: '0.375rem',
+                                                color: 'var(--primary)',
+                                                fontSize: '0.8rem',
+                                                fontWeight: '600',
+                                                transition: 'all 0.2s ease'
+                                            }}>
+                                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                                                    <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                                                </svg>
+                                                MCP Registry
+                                            </a>
+                                        )}
+                                    </>
                                 )}
                             </div>
                         </div>

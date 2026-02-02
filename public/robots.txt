@@ -1,4 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /api/
 
 Sitemap: https://rigour-labs.dev/sitemap.xml
+
+# IndexNow key for instant indexing
+# Key file: https://rigour-labs.dev/e7b921f9ee5026e595b3f0e09f0d9db0.txt

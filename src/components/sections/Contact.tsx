@@ -48,7 +48,7 @@ export default function Contact() {
                         }}>
                             Official Administrative Contact
                         </div>
-                        <a href="mailto:admin@rigour.run" style={{
+                        <a href="mailto:admin@rigour-labs.dev" style={{
                             fontSize: '2rem',
                             color: 'white',
                             textDecoration: 'none',
@@ -57,7 +57,7 @@ export default function Contact() {
                             paddingBottom: '4px',
                             transition: 'color 0.3s ease'
                         }} className="contact-link">
-                            admin@rigour.run
+                            admin@rigour-labs.dev
                         </a>
                     </div>
                 </div>

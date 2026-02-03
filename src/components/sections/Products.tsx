@@ -11,7 +11,7 @@ export default function Products() {
             cta: "Visit TalentLyt",
             color: "var(--primary)",
             glow: "var(--primary-glow)",
-            features: ["You Stay in Control", "13-Signal Fraud Detection", "6,800+ Anomalies in Beta"],
+            features: ["You Stay in Control", "82 Interviews Monitored", "6,800+ Anomalies Detected"],
             techStack: ["Next.js", "Python", "TensorFlow", "GCP"],
             targetAudience: "HR Teams, Technical Recruiters, Staffing Agencies",
             betaStats: {

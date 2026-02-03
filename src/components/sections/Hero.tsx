@@ -60,7 +60,7 @@ export default function Hero() {
                     margin: '0 auto 1.5rem',
                     lineHeight: '1.6'
                 }}>
-                    We build developer tools and SaaS products focused on code quality and hiring integrity. Our main products are <strong style={{ color: 'white', fontWeight: '600' }}>TalentLyt</strong> (AI interview integrity) and <strong style={{ color: 'white', fontWeight: '600' }}>Rigour CLI</strong> (code verification).
+                    We build developer tools and SaaS products focused on code quality and hiring integrity. <strong style={{ color: 'white', fontWeight: '600' }}>TalentLyt</strong>—<span style={{ color: 'var(--primary)', fontWeight: '600' }}>the AI co-pilot for hiring</span>. <strong style={{ color: 'white', fontWeight: '600' }}>Rigour CLI</strong>—verify AI-generated code locally.
                 </p>
 
                 <p style={{

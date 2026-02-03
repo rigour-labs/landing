@@ -6,12 +6,12 @@ export default function Products() {
             category: "SaaS / B2B",
             stage: "Beta",
             stageColor: "#fbbf24",
-            description: "Helps companies verify candidate identity and behavior during remote technical interviews. We use AI to flag suspicious activity in real-time, so hiring teams can make confident decisions. Currently in free beta with 2 organizations—no payments yet, just building and learning.",
+            description: "Your AI co-pilot for technical hiring. Maya AI handles screening while your team focuses on culture fit. 13-signal fraud detection catches deepfakes and proxy candidates in real-time. Currently in free beta with 2 organizations—no payments yet, just building and learning.",
             link: "https://talentlyt.cloud",
             cta: "Visit TalentLyt",
             color: "var(--primary)",
             glow: "var(--primary-glow)",
-            features: ["82 Interviews Monitored", "6,800+ Anomalies Detected", "41% Fraud Flag Rate"],
+            features: ["You Stay in Control", "13-Signal Fraud Detection", "6,800+ Anomalies in Beta"],
             techStack: ["Next.js", "Python", "TensorFlow", "GCP"],
             targetAudience: "HR Teams, Technical Recruiters, Staffing Agencies",
             betaStats: {
@@ -170,7 +170,7 @@ export default function Products() {
                                 <p style={{ color: 'var(--secondary)', lineHeight: '1.7', marginBottom: '1.5rem' }}>
                                     {product.title === 'TalentLyt' ? (
                                         <>
-                                            Helps companies verify candidate identity and behavior during remote technical interviews. We use AI to flag suspicious activity in real-time, so hiring teams can make confident decisions. Currently in free beta with 2 organizations—<span style={{ color: 'white', fontWeight: '500' }}>no payments yet, just building and learning.</span>
+                                            Your AI co-pilot for technical hiring. Maya AI handles screening while your team focuses on culture fit. 13-signal fraud detection catches deepfakes and proxy candidates in real-time. Currently in free beta with 2 organizations—<span style={{ color: 'white', fontWeight: '500' }}>no payments yet, just building and learning.</span>
                                         </>
                                     ) : (
                                         product.description

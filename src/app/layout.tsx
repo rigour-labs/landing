@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     default: "Rigour Labs | Developer Tools & SaaS for Code Verification and Hiring Integrity",
     template: "%s | Rigour Labs",
   },
-  description: "We build developer tools and SaaS products. TalentLyt verifies candidate identity in remote interviews. Rigour CLI checks AI-generated code before production. Founded 2025, based in India.",
+  description: "We build developer tools and SaaS products. TalentLyt is your AI co-pilot for technical hiring—handles screening while you focus on culture fit. Rigour CLI checks AI-generated code before production. Founded 2025, based in India.",
   keywords: [
     "Rigour Labs",
     "TalentLyt",
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Rigour Labs | Developer Tools for Code Verification & Hiring Integrity",
-    description: "TalentLyt detects interview fraud. Rigour CLI verifies AI-generated code. Built by engineers in India.",
+    description: "TalentLyt is your AI co-pilot for technical hiring. Rigour CLI verifies AI-generated code. Built by engineers in India.",
     url: "https://rigour-labs.dev",
     siteName: "Rigour Labs",
     images: [
@@ -74,7 +74,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Rigour Labs | Code Verification & Hiring Integrity Tools",
-    description: "TalentLyt for interview integrity. Rigour CLI for AI code verification. Founded 2025.",
+    description: "TalentLyt: your AI co-pilot for technical hiring. Rigour CLI: verify AI-generated code. Founded 2025.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -146,7 +146,7 @@ export default function RootLayout({
       "name": "TalentLyt",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
-      "description": "AI-powered interview integrity platform that helps companies verify candidate identity and behavior during remote technical interviews.",
+      "description": "Your AI co-pilot for technical hiring. Maya AI handles screening while your team focuses on culture fit. 13-signal fraud detection catches deepfakes and proxy candidates.",
       "url": "https://talentlyt.cloud",
       "author": {
         "@type": "Organization",
@@ -217,7 +217,7 @@ export default function RootLayout({
         "name": "What is TalentLyt?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "TalentLyt is an AI-powered SaaS platform that helps companies verify candidate identity and behavior during remote technical interviews. It detects suspicious activity in real-time to prevent interview fraud."
+          "text": "TalentLyt is your AI co-pilot for technical hiring. Maya AI handles technical screening while your team focuses on culture fit. It includes 13-signal fraud detection that catches deepfakes and proxy candidates in real-time."
         }
       },
       {

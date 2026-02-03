@@ -20,26 +20,28 @@ export const metadata: Metadata = {
     "Rigour Labs",
     "TalentLyt",
     "Rigour CLI",
-    "AI code verification",
+    "AI interview co-pilot",
+    "AI hiring assistant",
     "interview fraud detection",
     "remote hiring integrity",
+    "AI code verification",
     "code quality tools",
     "AI coding assistant",
     "developer tools India",
     "npm code checker",
-    "interview monitoring",
+    "Maya AI interviewer",
     "candidate verification",
     "AI generated code checker",
     "code review automation",
     "static code analysis",
-    "interview proctoring",
-    "remote interview security",
+    "deepfake detection hiring",
+    "proxy candidate detection",
     "MCP server",
     "Model Context Protocol",
     "GitHub App code review",
     "zero telemetry code analysis",
     "local code verification",
-    "hiring fraud prevention",
+    "13-signal fraud detection",
     "technical interview integrity",
     "AI code quality gate"
   ],
@@ -56,8 +58,8 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "Rigour Labs | Developer Tools for Code Verification & Hiring Integrity",
-    description: "TalentLyt is your AI co-pilot for technical hiring. Rigour CLI verifies AI-generated code. Built by engineers in India.",
+    title: "Rigour Labs | AI Co-Pilot for Hiring & Code Verification Tools",
+    description: "TalentLyt: your AI co-pilot for technical hiring. Beta: 6,800+ anomalies detected, 41% fraud flag rate. Rigour CLI: verify AI-generated code locally. Built in India.",
     url: "https://rigour-labs.dev",
     siteName: "Rigour Labs",
     images: [
@@ -73,8 +75,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rigour Labs | Code Verification & Hiring Integrity Tools",
-    description: "TalentLyt: your AI co-pilot for technical hiring. Rigour CLI: verify AI-generated code. Founded 2025.",
+    title: "Rigour Labs | AI Co-Pilot for Hiring & Code Verification",
+    description: "TalentLyt: AI co-pilot for hiring (6,800+ anomalies detected in beta). Rigour CLI: verify AI code locally. Built in India.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -146,7 +148,7 @@ export default function RootLayout({
       "name": "TalentLyt",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
-      "description": "Your AI co-pilot for technical hiring. Maya AI handles screening while your team focuses on culture fit. 13-signal fraud detection catches deepfakes and proxy candidates.",
+      "description": "Your AI co-pilot for technical hiring. Maya AI handles screening while you focus on culture fit. Beta: 6,800+ anomalies detected, 41% fraud flag rate across 82 interviews. 13-signal fraud detection catches deepfakes and proxy candidates.",
       "url": "https://talentlyt.cloud",
       "author": {
         "@type": "Organization",
@@ -217,7 +219,7 @@ export default function RootLayout({
         "name": "What is TalentLyt?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "TalentLyt is your AI co-pilot for technical hiring. Maya AI handles technical screening while your team focuses on culture fit. It includes 13-signal fraud detection that catches deepfakes and proxy candidates in real-time."
+          "text": "TalentLyt is your AI co-pilot for technical hiring. Maya AI handles screening while your team focuses on culture fit. Beta results: 6,800+ anomalies detected, 41% fraud flag rate across 82 interviews. 13-signal fraud detection catches deepfakes and proxy candidates in real-time."
         }
       },
       {

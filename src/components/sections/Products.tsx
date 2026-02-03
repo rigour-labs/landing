@@ -170,7 +170,18 @@ export default function Products() {
                                 <p style={{ color: 'var(--secondary)', lineHeight: '1.7', marginBottom: '1.5rem' }}>
                                     {product.title === 'TalentLyt' ? (
                                         <>
-                                            Your AI co-pilot for technical hiring. Maya AI handles screening while your team focuses on culture fit. 13-signal fraud detection catches deepfakes and proxy candidates in real-time. Currently in free beta with 2 organizations—<span style={{ color: 'white', fontWeight: '500' }}>no payments yet, just building and learning.</span>
+                                            <span style={{
+                                                color: 'white',
+                                                fontWeight: '700',
+                                                background: 'linear-gradient(135deg, rgba(129, 140, 248, 0.2), rgba(129, 140, 248, 0.05))',
+                                                padding: '0.25rem 0.75rem',
+                                                borderRadius: '0.5rem',
+                                                border: '1px solid rgba(129, 140, 248, 0.3)',
+                                                display: 'inline-block',
+                                                marginBottom: '0.75rem'
+                                            }}>Your AI co-pilot for technical hiring.</span>
+                                            <br />
+                                            Maya AI handles screening while your team focuses on culture fit. 13-signal fraud detection catches deepfakes and proxy candidates in real-time. Currently in free beta with 2 organizations—<span style={{ color: 'white', fontWeight: '500' }}>no payments yet, just building and learning.</span>
                                         </>
                                     ) : (
                                         product.description

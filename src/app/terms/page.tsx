@@ -3,8 +3,19 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-    title: 'Terms of Service | Rigour Labs',
-    description: 'Terms of Service for Rigour Labs products including TalentLyt and Rigour CLI.',
+    title: 'Terms of Service',
+    description: 'Terms of Service for Rigour Labs products. Usage terms for TalentLyt SaaS platform and MIT-licensed Rigour CLI open-source tool.',
+    keywords: ['terms of service', 'Rigour Labs terms', 'TalentLyt terms', 'MIT license', 'software terms', 'SaaS agreement'],
+    alternates: {
+        canonical: 'https://rigour-labs.dev/terms',
+    },
+    openGraph: {
+        title: 'Terms of Service | Rigour Labs',
+        description: 'Terms of Service for Rigour Labs products. Usage terms for TalentLyt and Rigour CLI.',
+        url: 'https://rigour-labs.dev/terms',
+        siteName: 'Rigour Labs',
+        type: 'website',
+    },
 };
 
 export default function TermsOfService() {

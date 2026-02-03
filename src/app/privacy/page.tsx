@@ -3,8 +3,19 @@ import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
-    title: 'Privacy Policy | Rigour Labs',
-    description: 'Privacy Policy for Rigour Labs products including TalentLyt and Rigour CLI.',
+    title: 'Privacy Policy',
+    description: 'Privacy Policy for Rigour Labs products. TalentLyt interview data handling and Rigour CLI zero-telemetry policy. Learn how we protect your data.',
+    keywords: ['privacy policy', 'data protection', 'Rigour Labs privacy', 'TalentLyt data', 'zero telemetry', 'GDPR compliance'],
+    alternates: {
+        canonical: 'https://rigour-labs.dev/privacy',
+    },
+    openGraph: {
+        title: 'Privacy Policy | Rigour Labs',
+        description: 'Privacy Policy for Rigour Labs products. TalentLyt interview data handling and Rigour CLI zero-telemetry policy.',
+        url: 'https://rigour-labs.dev/privacy',
+        siteName: 'Rigour Labs',
+        type: 'website',
+    },
 };
 
 export default function PrivacyPolicy() {

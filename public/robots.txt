@@ -1,8 +1,35 @@
+# Rigour Labs - robots.txt
+# https://rigour-labs.dev
+
+# Allow all crawlers
 User-agent: *
 Allow: /
 Disallow: /api/
 
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Yandex
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Sitemap location
 Sitemap: https://rigour-labs.dev/sitemap.xml
 
 # IndexNow key for instant indexing
 # Key file: https://rigour-labs.dev/e7b921f9ee5026e595b3f0e09f0d9db0.txt
+
+# Host directive
+Host: https://rigour-labs.dev

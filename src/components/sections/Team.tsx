@@ -13,7 +13,7 @@ export default function Team() {
             role: "Co-founder",
             bio: "AI Engineer with 9+ years of experience across the full stack. Currently working on LLM performance optimization, fine-tuning pipelines, and NLP algorithms. Led engineering teams at Infoedge (Naukri) building payment integrations and recruiter tools with Neo4j. Hands-on with Python, React, AWS, and machine learning infrastructure. Joined Rigour Labs to help build AI systems that actually work reliably in production.",
             linkedin: "https://www.linkedin.com/in/gaurav-prakash-910aa9a0/",
-            github: "",
+            github: "https://github.com/AiGauravPrakash",
             image: "/team/gaurav.jpg"
         }
     ];

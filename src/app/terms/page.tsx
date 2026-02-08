@@ -4,14 +4,14 @@ import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
     title: 'Terms of Service',
-    description: 'Terms of Service for Rigour Labs products. Usage terms for TalentLyt SaaS platform and MIT-licensed Rigour CLI open-source tool.',
-    keywords: ['terms of service', 'Rigour Labs terms', 'TalentLyt terms', 'MIT license', 'software terms', 'SaaS agreement'],
+    description: 'Terms of Service for Rigour Labs products. Usage terms for Rigovo (formerly TalentLyt) SaaS platform and MIT-licensed Rigour CLI open-source tool.',
+    keywords: ['terms of service', 'Rigour Labs terms', 'Rigovo terms', 'MIT license', 'software terms', 'SaaS agreement'],
     alternates: {
         canonical: 'https://rigour-labs.dev/terms',
     },
     openGraph: {
         title: 'Terms of Service | Rigour Labs',
-        description: 'Terms of Service for Rigour Labs products. Usage terms for TalentLyt and Rigour CLI.',
+        description: 'Terms of Service for Rigour Labs products. Usage terms for Rigovo (formerly TalentLyt) and Rigour CLI.',
         url: 'https://rigour-labs.dev/terms',
         siteName: 'Rigour Labs',
         type: 'website',
@@ -31,7 +31,7 @@ export default function TermsOfService() {
                         <section style={{ marginBottom: '2.5rem' }}>
                             <h2 style={{ color: 'white', fontSize: '1.5rem', marginBottom: '1rem' }}>1. Acceptance of Terms</h2>
                             <p>
-                                By accessing or using Rigour Labs products and services, including TalentLyt and Rigour CLI, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
+                                By accessing or using Rigour Labs products and services, including Rigovo (formerly TalentLyt) and Rigour CLI, you agree to be bound by these Terms of Service. If you do not agree to these terms, please do not use our services.
                             </p>
                         </section>
 
@@ -43,15 +43,15 @@ export default function TermsOfService() {
                                 Rigour CLI is an open-source tool distributed under the MIT License. It provides code quality gates and static analysis for AI-generated code. The CLI operates entirely on your local machine with zero external data transmission.
                             </p>
 
-                            <h3 style={{ color: 'white', fontSize: '1.1rem', marginBottom: '0.75rem', marginTop: '1.5rem' }}>2.2 TalentLyt</h3>
+                            <h3 style={{ color: 'white', fontSize: '1.1rem', marginBottom: '0.75rem', marginTop: '1.5rem' }}>2.2 Rigovo</h3>
                             <p>
-                                TalentLyt is a SaaS platform providing AI-driven interview integrity monitoring and verification services. Access to TalentLyt requires a subscription and is subject to additional terms specified in your service agreement.
+                                Rigovo (formerly TalentLyt) is a SaaS platform providing AI-driven interview integrity monitoring and verification services. Access to Rigovo requires a subscription and is subject to additional terms specified in your service agreement.
                             </p>
                         </section>
 
                         <section style={{ marginBottom: '2.5rem' }}>
                             <h2 style={{ color: 'white', fontSize: '1.5rem', marginBottom: '1rem' }}>3. User Accounts</h2>
-                            <p style={{ marginBottom: '1rem' }}>To use TalentLyt, you must:</p>
+                            <p style={{ marginBottom: '1rem' }}>To use Rigovo, you must:</p>
                             <ul style={{ marginLeft: '1.5rem' }}>
                                 <li>Create an account with accurate and complete information</li>
                                 <li>Maintain the security of your account credentials</li>
@@ -81,16 +81,16 @@ export default function TermsOfService() {
                                 Rigour CLI is released under the MIT License. You are free to use, modify, and distribute it in accordance with the license terms. The MIT License can be found at <a href="https://opensource.org/licenses/MIT" style={{ color: 'var(--primary)' }}>opensource.org/licenses/MIT</a>.
                             </p>
 
-                            <h3 style={{ color: 'white', fontSize: '1.1rem', marginBottom: '0.75rem', marginTop: '1.5rem' }}>5.2 TalentLyt and Other Proprietary Services</h3>
+                            <h3 style={{ color: 'white', fontSize: '1.1rem', marginBottom: '0.75rem', marginTop: '1.5rem' }}>5.2 Rigovo and Other Proprietary Services</h3>
                             <p>
-                                All rights, title, and interest in TalentLyt, including its design, features, and content, remain the exclusive property of Rigour Labs. You are granted a limited, non-exclusive license to use the service during your subscription period.
+                                All rights, title, and interest in Rigovo (formerly TalentLyt), including its design, features, and content, remain the exclusive property of Rigour Labs. You are granted a limited, non-exclusive license to use the service during your subscription period.
                             </p>
                         </section>
 
                         <section style={{ marginBottom: '2.5rem' }}>
                             <h2 style={{ color: 'white', fontSize: '1.5rem', marginBottom: '1rem' }}>6. Payment Terms</h2>
                             <p>
-                                For paid services (TalentLyt), you agree to pay all applicable fees as described in your subscription agreement. Fees are non-refundable except as required by law or as specified in your agreement.
+                                For paid services (Rigovo), you agree to pay all applicable fees as described in your subscription agreement. Fees are non-refundable except as required by law or as specified in your agreement.
                             </p>
                         </section>
 

@@ -2,13 +2,13 @@
 export default function Products() {
     const products = [
         {
-            title: "TalentLyt",
+            title: "Rigovo",
             category: "SaaS / B2B",
             stage: "Beta",
             stageColor: "#fbbf24",
-            description: "Your AI co-pilot for technical hiring. Maya AI handles screening while your team focuses on culture fit. 13-signal fraud detection catches deepfakes and proxy candidates in real-time. Currently in free beta with 2 organizations—no payments yet, just building and learning.",
-            link: "https://talentlyt.cloud",
-            cta: "Visit TalentLyt",
+            description: "Your AI co-pilot for technical hiring (formerly TalentLyt). Maya AI handles screening while your team focuses on culture fit. 13-signal fraud detection catches deepfakes and proxy candidates in real-time. Currently in free beta with 2 organizations—no payments yet, just building and learning.",
+            link: "https://rigovo.com",
+            cta: "Visit Rigovo",
             color: "var(--primary)",
             glow: "var(--primary-glow)",
             features: ["You Stay in Control", "82 Interviews Monitored", "6,800+ Anomalies Detected"],
@@ -46,27 +46,27 @@ export default function Products() {
     return (
         <section id="products" aria-labelledby="products-heading" style={{ padding: 'clamp(4rem, 8vw, 8rem) 0' }}>
             <div className="container">
-                <div style={{ textAlign: 'center', marginBottom: 'clamp(2.5rem, 5vw, 5rem)' }}>
-                    <span style={{
+                <div style={{ textAlign: 'center', marginBottom: 'clamp(4rem, 8vw, 6rem)' }}>
+                    <div style={{
                         display: 'inline-flex',
                         alignItems: 'center',
-                        gap: '0.5rem',
-                        padding: '0.5rem 1rem',
+                        gap: '0.625rem',
+                        padding: '0.50rem 1rem',
                         borderRadius: '9999px',
-                        background: 'rgba(129, 140, 248, 0.1)',
-                        border: '1px solid rgba(129, 140, 248, 0.2)',
-                        color: 'var(--primary)',
-                        fontSize: '0.75rem',
+                        background: 'rgba(16, 185, 129, 0.08)',
+                        border: '1px solid rgba(16, 185, 129, 0.2)',
+                        color: 'var(--accent-emerald)',
+                        fontSize: '0.7rem',
                         fontWeight: '700',
                         textTransform: 'uppercase',
                         letterSpacing: '0.1em',
                         marginBottom: '1.5rem'
                     }}>
-                        What We Build
-                    </span>
-                    <h2 id="products-heading" style={{ fontSize: 'clamp(1.75rem, 4vw, 2.5rem)', marginBottom: '1rem' }}>Our Products</h2>
-                    <p style={{ color: 'var(--secondary)', maxWidth: '700px', margin: '0 auto', fontSize: 'clamp(1rem, 2vw, 1.125rem)', lineHeight: '1.7' }}>
-                        Two products, two problems. TalentLyt tackles interview fraud in remote hiring. Rigour CLI helps developers verify AI-generated code before it ships.
+                        Portfolio
+                    </div>
+                    <h2 id="products-heading" style={{ fontSize: 'clamp(2.25rem, 5vw, 3rem)', marginBottom: '1.25rem', letterSpacing: '-0.03em' }}>Our Products</h2>
+                    <p style={{ color: 'var(--secondary)', maxWidth: '650px', margin: '0 auto', fontSize: 'clamp(1rem, 2vw, 1.125rem)', lineHeight: '1.7' }}>
+                        Rigovo secures technical hiring while Rigour CLI verifies AI-native development. Two products, one mission: Total Integrity.
                     </p>
                 </div>
 
@@ -136,45 +136,45 @@ export default function Products() {
                                             width={160}
                                             height={20}
                                             loading="lazy"
-                                            style={{ height: '20px', width: 'auto' }}
+                                            style={{ height: '20px', width: 'auto', filter: 'grayscale(1) brightness(1.5)' }}
                                         />
                                         <div style={{
                                             display: 'flex',
                                             gap: '0.5rem',
-                                            marginTop: '0.75rem',
+                                            marginTop: '1rem',
                                             flexWrap: 'wrap'
                                         }}>
                                             <span style={{
-                                                padding: '0.25rem 0.75rem',
-                                                borderRadius: '9999px',
-                                                background: 'linear-gradient(135deg, #8b5cf6 0%, #6366f1 100%)',
-                                                color: '#fff',
+                                                padding: '0.25rem 0.625rem',
+                                                borderRadius: '0.5rem',
+                                                background: 'rgba(99, 102, 241, 0.1)',
+                                                border: '1px solid rgba(99, 102, 241, 0.2)',
+                                                color: 'var(--primary)',
                                                 fontSize: '0.65rem',
-                                                fontWeight: '700',
+                                                fontWeight: '800',
                                                 textTransform: 'uppercase',
                                                 letterSpacing: '0.05em',
                                                 display: 'inline-flex',
                                                 alignItems: 'center',
                                                 gap: '0.35rem'
                                             }}>
-                                                <span style={{ fontSize: '0.7rem' }}>⚡</span>
-                                                Opus 4.6 Ready
+                                                Opus 4.6
                                             </span>
                                             <span style={{
-                                                padding: '0.25rem 0.75rem',
-                                                borderRadius: '9999px',
-                                                background: 'linear-gradient(135deg, #10b981 0%, #059669 100%)',
-                                                color: '#fff',
+                                                padding: '0.25rem 0.625rem',
+                                                borderRadius: '0.5rem',
+                                                background: 'rgba(16, 185, 129, 0.1)',
+                                                border: '1px solid rgba(16, 185, 129, 0.2)',
+                                                color: 'var(--accent-emerald)',
                                                 fontSize: '0.65rem',
-                                                fontWeight: '700',
+                                                fontWeight: '800',
                                                 textTransform: 'uppercase',
                                                 letterSpacing: '0.05em',
                                                 display: 'inline-flex',
                                                 alignItems: 'center',
                                                 gap: '0.35rem'
                                             }}>
-                                                <span style={{ fontSize: '0.7rem' }}>🤝</span>
-                                                GPT-5.3 Coworking
+                                                GPT-5.3
                                             </span>
                                         </div>
                                     </div>
@@ -184,30 +184,30 @@ export default function Products() {
                                     <div style={{
                                         display: 'grid',
                                         gridTemplateColumns: 'repeat(3, 1fr)',
-                                        gap: '0.5rem',
-                                        marginBottom: '1rem',
-                                        padding: '0.75rem',
-                                        background: 'rgba(129, 140, 248, 0.05)',
-                                        borderRadius: '0.5rem',
-                                        border: '1px solid rgba(129, 140, 248, 0.1)'
+                                        gap: '1px',
+                                        marginBottom: '1.5rem',
+                                        background: 'var(--card-border)',
+                                        borderRadius: '0.75rem',
+                                        overflow: 'hidden',
+                                        border: '1px solid var(--card-border)'
                                     }} role="list" aria-label="Beta statistics">
-                                        <div style={{ textAlign: 'center' }} role="listitem">
-                                            <div style={{ fontSize: '1.25rem', fontWeight: '700', color: 'var(--primary)' }}>82</div>
-                                            <div style={{ fontSize: '0.65rem', color: 'var(--secondary)', textTransform: 'uppercase' }}>Interviews</div>
+                                        <div style={{ textAlign: 'center', background: 'rgba(2, 4, 10, 0.4)', padding: '0.75rem' }} role="listitem">
+                                            <div style={{ fontSize: '1.125rem', fontWeight: '700', color: '#ffffff' }}>82</div>
+                                            <div style={{ fontSize: '0.6rem', color: 'var(--secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Interviews</div>
                                         </div>
-                                        <div style={{ textAlign: 'center' }} role="listitem">
-                                            <div style={{ fontSize: '1.25rem', fontWeight: '700', color: 'var(--primary)' }}>6.8K</div>
-                                            <div style={{ fontSize: '0.65rem', color: 'var(--secondary)', textTransform: 'uppercase' }}>Anomalies</div>
+                                        <div style={{ textAlign: 'center', background: 'rgba(2, 4, 10, 0.4)', padding: '0.75rem' }} role="listitem">
+                                            <div style={{ fontSize: '1.125rem', fontWeight: '700', color: '#ffffff' }}>6.8K</div>
+                                            <div style={{ fontSize: '0.6rem', color: 'var(--secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Signals</div>
                                         </div>
-                                        <div style={{ textAlign: 'center' }} role="listitem">
-                                            <div style={{ fontSize: '1.25rem', fontWeight: '700', color: '#fbbf24' }}>41%</div>
-                                            <div style={{ fontSize: '0.65rem', color: 'var(--secondary)', textTransform: 'uppercase' }}>Flagged</div>
+                                        <div style={{ textAlign: 'center', background: 'rgba(2, 4, 10, 0.4)', padding: '0.75rem' }} role="listitem">
+                                            <div style={{ fontSize: '1.125rem', fontWeight: '700', color: '#10b981' }}>41%</div>
+                                            <div style={{ fontSize: '0.6rem', color: 'var(--secondary)', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Flagged</div>
                                         </div>
                                     </div>
                                 )}
 
                                 <p style={{ color: 'var(--secondary)', lineHeight: '1.7', marginBottom: '1.5rem' }}>
-                                    {product.title === 'TalentLyt' ? (
+                                    {product.title === 'Rigovo' ? (
                                         <>
                                             <span style={{
                                                 color: 'white',

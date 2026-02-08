@@ -30,38 +30,41 @@ export default function Navbar() {
                 display: 'flex',
                 justifyContent: 'space-between',
                 alignItems: 'center',
-                padding: '0.75rem 1.5rem',
-                borderRadius: '1rem',
-                background: 'rgba(2, 6, 23, 0.85)',
-                backdropFilter: 'blur(12px)',
-                border: '1px solid rgba(255, 255, 255, 0.1)'
+                padding: '0.5rem 1.25rem',
+                borderRadius: '9999px',
+                background: 'rgba(2, 4, 10, 0.7)',
+                backdropFilter: 'blur(20px) saturate(180%)',
+                border: '1px solid rgba(255, 255, 255, 0.08)',
+                boxShadow: '0 10px 30px -10px rgba(0, 0, 0, 0.5)',
+                margin: '0 auto',
+                maxWidth: '800px'
             }}>
                 <Link
                     href="/"
-                    aria-label="Rigour Labs - Home"
+                    aria-label="Rigovo - Home"
                     style={{
-                        fontSize: 'clamp(1rem, 2vw, 1.25rem)',
+                        fontSize: '1rem',
                         fontWeight: '700',
                         display: 'flex',
                         alignItems: 'center',
-                        gap: '0.5rem'
+                        gap: '0.625rem'
                     }}
                 >
                     <span style={{
-                        width: '32px',
-                        height: '32px',
-                        borderRadius: '8px',
-                        background: 'var(--primary)',
-                        boxShadow: '0 0 15px var(--primary-glow)',
+                        width: '28px',
+                        height: '28px',
+                        borderRadius: '6px',
+                        background: 'linear-gradient(135deg, var(--primary) 0%, var(--accent-cyan) 100%)',
+                        boxShadow: '0 0 20px var(--primary-glow)',
                         display: 'flex',
                         alignItems: 'center',
                         justifyContent: 'center',
                         fontWeight: '900',
-                        color: '#020617',
-                        fontSize: '1rem',
+                        color: '#ffffff',
+                        fontSize: '0.875rem',
                         flexShrink: 0
                     }} aria-hidden="true">R</span>
-                    <span className="nav-brand">RIGOUR LABS</span>
+                    <span className="nav-brand" style={{ letterSpacing: '0.05em', color: '#ffffff' }}>RIGOVO</span>
                 </Link>
 
                 {/* Desktop Navigation */}
@@ -69,7 +72,7 @@ export default function Navbar() {
                     className="nav-desktop"
                     style={{
                         display: 'flex',
-                        gap: 'clamp(1rem, 2vw, 2rem)',
+                        gap: '1.5rem',
                         alignItems: 'center'
                     }}
                 >
@@ -79,24 +82,25 @@ export default function Navbar() {
                             href={link.href}
                             style={{
                                 color: 'var(--secondary)',
-                                fontSize: '0.9rem',
+                                fontSize: '0.875rem',
                                 fontWeight: '500',
-                                transition: 'color 0.2s ease',
-                                padding: '0.5rem 0'
+                                transition: 'all 0.2s ease',
+                                padding: '0.5rem 0.25rem'
                             }}
+                            className="nav-link"
                         >
                             {link.label}
                         </Link>
                     ))}
+                    <div style={{ width: '1px', height: '20px', background: 'var(--card-border)', margin: '0 0.5rem' }} />
                     <Link
                         href="https://rigour.run"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="btn-primary"
-                        style={{ fontSize: '0.9rem', padding: '0.625rem 1.25rem' }}
+                        style={{ fontSize: '0.8125rem', padding: '0.5rem 1rem', minHeight: '36px' }}
                     >
                         Rigour OSS
-                        <span className="sr-only"> (opens in new tab)</span>
                     </Link>
                 </div>
 

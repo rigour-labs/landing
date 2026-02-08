@@ -55,7 +55,7 @@ export default function Footer() {
                     <nav aria-label="Products navigation">
                         <h2 style={{ marginBottom: '1.25rem', fontSize: '1rem' }}>Products</h2>
                         <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                            <li><a href="https://talentlyt.cloud" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--secondary)', fontSize: '0.875rem' }}>TalentLyt SaaS</a></li>
+                            <li><a href="https://rigovo.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--secondary)', fontSize: '0.875rem' }}>Rigovo SaaS</a></li>
                             <li><a href="https://rigour.run" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--secondary)', fontSize: '0.875rem' }}>Rigour OSS</a></li>
                             <li><a href="https://docs.rigour.run" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--secondary)', fontSize: '0.875rem' }}>Documentation</a></li>
                         </ul>

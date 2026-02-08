@@ -15,9 +15,9 @@ export const metadata: Metadata = {
     default: "Rigour Labs | Developer Tools & SaaS for Code Verification and Hiring Integrity",
     template: "%s | Rigour Labs",
   },
-  description: "We build developer tools and SaaS products. TalentLyt is your AI co-pilot for technical hiring—handles screening while you focus on culture fit. Rigour CLI checks AI-generated code before production. Founded 2025, based in India.",
+  description: "We build developer tools and SaaS products. Rigovo (formerly TalentLyt) is your AI co-pilot for technical hiring—handles screening while you focus on culture fit. Rigour CLI checks AI-generated code before production. Founded 2025, based in India.",
   keywords: [
-    "Rigour Labs",
+    "Rigovo",
     "TalentLyt",
     "Rigour CLI",
     "AI interview co-pilot",
@@ -47,7 +47,6 @@ export const metadata: Metadata = {
   ],
   authors: [
     { name: "Ashutosh Singh", url: "https://www.linkedin.com/in/erashu212/" },
-    { name: "Gaurav Prakash", url: "https://www.linkedin.com/in/gaurav-prakash-910aa9a0/" },
     { name: "Rigour Labs Team" }
   ],
   creator: "Rigour Labs",
@@ -59,7 +58,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Rigour Labs | AI Co-Pilot for Hiring & Code Verification Tools",
-    description: "TalentLyt: your AI co-pilot for technical hiring. Beta: 6,800+ anomalies detected, 41% fraud flag rate. Rigour CLI: verify AI-generated code locally. Built in India.",
+    description: "Rigovo (formerly TalentLyt): your AI co-pilot for technical hiring. Beta: 6,800+ anomalies detected, 41% fraud flag rate. Rigour CLI: verify AI-generated code locally. Built in India.",
     url: "https://rigour-labs.dev",
     siteName: "Rigour Labs",
     images: [
@@ -76,7 +75,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Rigour Labs | AI Co-Pilot for Hiring & Code Verification",
-    description: "TalentLyt: AI co-pilot for hiring (6,800+ anomalies detected in beta). Rigour CLI: verify AI code locally. Built in India.",
+    description: "Rigovo (formerly TalentLyt): AI co-pilot for hiring (6,800+ anomalies detected in beta). Rigour CLI: verify AI code locally. Built in India.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -108,7 +107,7 @@ export default function RootLayout({
     "legalName": "Rigour Labs",
     "url": "https://rigour-labs.dev",
     "logo": "https://rigour-labs.dev/logo.png",
-    "description": "We build developer tools and SaaS products for code verification and hiring integrity. Our products are TalentLyt (interview integrity) and Rigour CLI (AI code verification).",
+    "description": "We build developer tools and SaaS products for code verification and hiring integrity. Our products are Rigovo (formerly TalentLyt) for interview integrity and Rigour CLI for AI code verification.",
     "foundingDate": "2025",
     "address": {
       "@type": "PostalAddress",
@@ -120,12 +119,6 @@ export default function RootLayout({
         "name": "Ashutosh Singh",
         "jobTitle": "Founder",
         "sameAs": "https://www.linkedin.com/in/erashu212/"
-      },
-      {
-        "@type": "Person",
-        "name": "Gaurav Prakash",
-        "jobTitle": "Co-founder",
-        "sameAs": "https://www.linkedin.com/in/gaurav-prakash-910aa9a0/"
       }
     ],
     "sameAs": [
@@ -145,11 +138,11 @@ export default function RootLayout({
     {
       "@context": "https://schema.org",
       "@type": "SoftwareApplication",
-      "name": "TalentLyt",
+      "name": "Rigovo",
       "applicationCategory": "BusinessApplication",
       "operatingSystem": "Web",
-      "description": "Your AI co-pilot for technical hiring. Maya AI handles screening while you focus on culture fit. Beta: 6,800+ anomalies detected, 41% fraud flag rate across 82 interviews. 13-signal fraud detection catches deepfakes and proxy candidates.",
-      "url": "https://talentlyt.cloud",
+      "description": "Your AI co-pilot for technical hiring. Rigovo (formerly TalentLyt) handles screening while you focus on culture fit. Beta: 6,800+ anomalies detected, 41% fraud flag rate across 82 interviews. 13-signal fraud detection catches deepfakes and proxy candidates.",
+      "url": "https://rigovo.com",
       "author": {
         "@type": "Organization",
         "name": "Rigour Labs"
@@ -216,10 +209,10 @@ export default function RootLayout({
       },
       {
         "@type": "Question",
-        "name": "What is TalentLyt?",
+        "name": "What is Rigovo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "TalentLyt is your AI co-pilot for technical hiring. Maya AI handles screening while your team focuses on culture fit. Beta results: 6,800+ anomalies detected, 41% fraud flag rate across 82 interviews. 13-signal fraud detection catches deepfakes and proxy candidates in real-time."
+          "text": "Rigovo (formerly TalentLyt) is your AI co-pilot for technical hiring. Maya AI handles screening while your team focuses on culture fit. Beta results: 6,800+ anomalies detected, 41% fraud flag rate across 82 interviews. 13-signal fraud detection catches deepfakes and proxy candidates in real-time."
         }
       },
       {

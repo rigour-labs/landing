@@ -4,12 +4,12 @@ Rigour Labs is an R&D laboratory building the infrastructure for verifiable soft
 
 ## Our Ecosystem
 
-### TalentLyt (SaaS)
-TalentLyt is a comprehensive AI-driven hiring integrity platform. It eliminates interview fraud and ensures a verifiable hiring process through live monitoring and AI anomaly detection.
-URL: https://talentlyt.cloud
+### Rigovo (SaaS)
+Rigovo (formerly TalentLyt) is a comprehensive AI-driven hiring integrity platform. It eliminates interview fraud and ensures a verifiable hiring process through live monitoring and AI anomaly detection.
+URL: https://rigovo.com
 
-### Rigour (OSS)
-Rigour is an open-source framework for building verifiable codebases. It ensures that AI-generated code meets production standards through zero-telemetry gates and deep static analysis.
+### Rigour CLI (OSS)
+Rigour CLI is an open-source framework for building verifiable codebases. It ensures that AI-generated code meets production standards through zero-telemetry gates and deep static analysis.
 URL: https://rigour.run
 
 ## Our Mission
@@ -18,4 +18,4 @@ We stand for technical rigour in an era of "vibe coding". Our mission is to brid
 ## Contact & Resources
 GitHub: https://github.com/rigour-labs
 Website: https://rigour-labs.dev
-Address: London / Bangalore (Engineering Hubs)
+Address: India (Engineering Hub)

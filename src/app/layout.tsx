@@ -12,8 +12,8 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://rigour-labs.dev"),
   title: {
-    default: "Rigour Labs | Developer Tools & SaaS for Code Verification and Hiring Integrity",
-    template: "%s | Rigour Labs",
+    default: "Rigovo | AI Co-pilot for Technical Hiring & Code Verification",
+    template: "%s | Rigovo",
   },
   description: "We build developer tools and SaaS products. Rigovo (formerly TalentLyt) is your AI co-pilot for technical hiring—handles screening while you focus on culture fit. Rigour CLI checks AI-generated code before production. Founded 2025, based in India.",
   keywords: [
@@ -57,10 +57,10 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "Rigour Labs | AI Co-Pilot for Hiring & Code Verification Tools",
-    description: "Rigovo (formerly TalentLyt): your AI co-pilot for technical hiring. Beta: 6,800+ anomalies detected, 41% fraud flag rate. Rigour CLI: verify AI-generated code locally. Built in India.",
+    title: "Rigovo | Engineering Trust in AI-Native Software",
+    description: "Secure your technical hiring with Rigovo (formerly TalentLyt). 13-signal fraud detection and AI-driven screening for verifiable engineering teams.",
     url: "https://rigour-labs.dev",
-    siteName: "Rigour Labs",
+    siteName: "Rigovo",
     images: [
       {
         url: "/og-image.png",
@@ -74,8 +74,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rigour Labs | AI Co-Pilot for Hiring & Code Verification",
-    description: "Rigovo (formerly TalentLyt): AI co-pilot for hiring (6,800+ anomalies detected in beta). Rigour CLI: verify AI code locally. Built in India.",
+    title: "Rigovo | AI Co-pilot for Technical Hiring",
+    description: "Rigovo (formerly TalentLyt) ensures hiring integrity with 13-signal fraud detection. Built for high-growth engineering teams.",
     images: ["/og-image.png"],
   },
   robots: {

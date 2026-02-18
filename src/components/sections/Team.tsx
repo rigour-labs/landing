@@ -258,7 +258,7 @@ export default function Team() {
                             color: 'var(--primary)',
                             marginBottom: '0.5rem'
                         }}>
-                            2
+                            1
                         </p>
                         <p style={{
                             color: 'var(--secondary)',

@@ -1,7 +1,7 @@
 {
   "name": "Rigour Labs",
   "short_name": "Rigour Labs",
-  "description": "Developer tools and SaaS products for code verification and hiring integrity",
+  "description": "Developer tools for AI-native software verification",
   "start_url": "/",
   "display": "standalone",
   "background_color": "#0a0a0a",
@@ -22,7 +22,11 @@
       "purpose": "any maskable"
     }
   ],
-  "categories": ["developer tools", "business", "productivity"],
+  "categories": [
+    "developer tools",
+    "business",
+    "productivity"
+  ],
   "lang": "en",
   "dir": "ltr"
 }

@@ -6,7 +6,7 @@ export default function Products() {
             category: "SaaS / B2B",
             stage: "Beta",
             stageColor: "#fbbf24",
-            description: "Your AI co-pilot for technical hiring (formerly TalentLyt). Maya AI handles screening while your team focuses on culture fit. 13-signal fraud detection catches deepfakes and proxy candidates in real-time. Currently in free beta with 2 organizations—no payments yet, just building and learning.",
+            description: "Your AI co-pilot for technical hiring. Maya AI handles screening while your team focuses on culture fit. 13-signal fraud detection catches deepfakes and proxy candidates in real-time. Currently in free beta with 2 organizations—no payments yet, just building and learning.",
             link: "https://rigovo.com",
             cta: "Visit Rigovo",
             color: "var(--primary)",
@@ -66,7 +66,7 @@ export default function Products() {
                     </div>
                     <h2 id="products-heading" style={{ fontSize: 'clamp(2.25rem, 5vw, 3rem)', marginBottom: '1.25rem', letterSpacing: '-0.03em' }}>Our Products</h2>
                     <p style={{ color: 'var(--secondary)', maxWidth: '650px', margin: '0 auto', fontSize: 'clamp(1rem, 2vw, 1.125rem)', lineHeight: '1.7' }}>
-                        Rigovo secures technical hiring while Rigour CLI verifies AI-native development. Two products, one mission: Total Integrity.
+                        Rigour CLI verifies AI-native development with local-only analysis. Total Integrity for your code.
                     </p>
                 </div>
 
@@ -75,7 +75,7 @@ export default function Products() {
                     gridTemplateColumns: 'repeat(auto-fit, minmax(min(100%, 350px), 1fr))',
                     gap: '2rem'
                 }}>
-                    {products.map((product, index) => (
+                    {products.filter(p => p.title !== 'Rigovo').map((product, index) => (
                         <article key={index} className="glass" style={{
                             padding: 'clamp(1.5rem, 3vw, 2.5rem)',
                             transition: 'transform 0.3s ease, border-color 0.3s ease',
@@ -207,24 +207,7 @@ export default function Products() {
                                 )}
 
                                 <p style={{ color: 'var(--secondary)', lineHeight: '1.7', marginBottom: '1.5rem' }}>
-                                    {product.title === 'Rigovo' ? (
-                                        <>
-                                            <span style={{
-                                                color: 'white',
-                                                fontWeight: '700',
-                                                background: 'linear-gradient(135deg, rgba(129, 140, 248, 0.2), rgba(129, 140, 248, 0.05))',
-                                                padding: '0.25rem 0.75rem',
-                                                borderRadius: '0.5rem',
-                                                border: '1px solid rgba(129, 140, 248, 0.3)',
-                                                display: 'inline-block',
-                                                marginBottom: '0.75rem'
-                                            }}>Your AI co-pilot for technical hiring.</span>
-                                            <br />
-                                            Maya AI handles screening while your team focuses on culture fit. 13-signal fraud detection catches deepfakes and proxy candidates in real-time. Currently in free beta with 2 organizations—<span style={{ color: 'white', fontWeight: '500' }}>no payments yet, just building and learning.</span>
-                                        </>
-                                    ) : (
-                                        product.description
-                                    )}
+                                    {product.description}
                                 </p>
 
                                 <div style={{

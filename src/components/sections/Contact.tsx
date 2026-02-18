@@ -29,7 +29,7 @@ export default function Contact() {
                         lineHeight: '1.7',
                         marginBottom: 'clamp(1.5rem, 3vw, 3rem)'
                     }}>
-                        Want to try Rigovo beta? Have questions about Rigour CLI? Just want to say hi? Drop us a line.
+                        Have questions about Rigour CLI? Just want to say hi? Drop us a line.
                     </p>
 
                     <address style={{

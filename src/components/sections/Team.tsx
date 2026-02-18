@@ -1,14 +1,13 @@
 export default function Team() {
-    const team = [
-        {
-            name: "Ashutosh Singh",
-            role: "Founder",
-            bio: "I've spent 13+ years building systems that actually work at scale. Started as a developer, grew into architecture roles, and eventually led engineering teams shipping AI/ML platforms and cloud infrastructure on AWS and GCP. What drives me now is bringing LLM research—things like RAG and evaluation pipelines—into real production environments. Along the way, I've helped teams hit 99.9%+ SLA on critical workloads, cut duplicate API calls by 93%, and speed up deployments by 85%. I started Rigour Labs because I believe we need better tools for verifying AI-generated code and ensuring integrity in hiring.",
-            linkedin: "https://www.linkedin.com/in/erashu212/",
-            github: "https://github.com/erashu212",
-            image: "/team/ashutosh.jpg"
-        }
-    ];
+    interface TeamMember {
+        name: string;
+        role: string;
+        bio?: string;
+        linkedin?: string;
+        github?: string;
+        image?: string;
+    }
+    const team: TeamMember[] = [];
 
     const advisors = [
         {

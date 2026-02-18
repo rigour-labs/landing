@@ -5,10 +5,6 @@ export default function Mission() {
             description: "When AI writes code, someone needs to verify it actually works. We build the tools that check AI-generated code before it ships."
         },
         {
-            title: "Honest Hiring",
-            description: "Remote interviews created new ways to cheat. We help companies verify that candidates are who they say they are."
-        },
-        {
             title: "Your Data Stays Yours",
             description: "Our CLI runs entirely on your machine. No cloud uploads, no telemetry, no phone-home. Your code never leaves your computer."
         }

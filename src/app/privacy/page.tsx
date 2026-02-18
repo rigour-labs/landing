@@ -4,14 +4,14 @@ import Footer from "@/components/layout/Footer";
 
 export const metadata: Metadata = {
     title: 'Privacy Policy',
-    description: 'Privacy Policy for Rigour Labs products. Rigovo (formerly TalentLyt) interview data handling and Rigour CLI zero-telemetry policy. Learn how we protect your data.',
-    keywords: ['privacy policy', 'data protection', 'Rigour Labs privacy', 'Rigovo data', 'zero telemetry', 'GDPR compliance'],
+    description: 'Privacy Policy for Rigour Labs products. Rigour CLI zero-telemetry policy. Learn how we protect your data.',
+    keywords: ['privacy policy', 'data protection', 'Rigour Labs privacy', 'zero telemetry', 'GDPR compliance'],
     alternates: {
         canonical: 'https://rigour-labs.dev/privacy',
     },
     openGraph: {
         title: 'Privacy Policy | Rigour Labs',
-        description: 'Privacy Policy for Rigour Labs products. Rigovo (formerly TalentLyt) interview data handling and Rigour CLI zero-telemetry policy.',
+        description: 'Privacy Policy for Rigour Labs products. Rigour CLI zero-telemetry policy.',
         url: 'https://rigour-labs.dev/privacy',
         siteName: 'Rigour Labs',
         type: 'website',
@@ -31,7 +31,7 @@ export default function PrivacyPolicy() {
                         <section style={{ marginBottom: '2.5rem' }}>
                             <h2 style={{ color: 'white', fontSize: '1.5rem', marginBottom: '1rem' }}>1. Introduction</h2>
                             <p>
-                                Rigour Labs ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our products and services, including Rigovo (formerly TalentLyt) and Rigour CLI.
+                                Rigour Labs ("we," "our," or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our products and services, including Rigour CLI.
                             </p>
                         </section>
 
@@ -49,17 +49,8 @@ export default function PrivacyPolicy() {
                                 <li>All processing happens on your local machine</li>
                             </ul>
 
-                            <h3 style={{ color: 'white', fontSize: '1.1rem', marginBottom: '0.75rem', marginTop: '1.5rem' }}>2.2 Rigovo (SaaS Platform)</h3>
-                            <p style={{ marginBottom: '1rem' }}>When you use Rigovo, we may collect:</p>
-                            <ul style={{ marginLeft: '1.5rem', marginBottom: '1rem' }}>
-                                <li><strong style={{ color: 'white' }}>Account Information:</strong> Name, email address, company name, and job title</li>
-                                <li><strong style={{ color: 'white' }}>Interview Data:</strong> Video and audio recordings during interview sessions (with explicit consent)</li>
-                                <li><strong style={{ color: 'white' }}>Usage Data:</strong> How you interact with our platform, features used, and session duration</li>
-                                <li><strong style={{ color: 'white' }}>Technical Data:</strong> Browser type, device information, and IP address</li>
-                            </ul>
-
-                            <h3 style={{ color: 'white', fontSize: '1.1rem', marginBottom: '0.75rem', marginTop: '1.5rem' }}>2.3 Website Visitors</h3>
-                            <p>When you visit our websites (rigour-labs.dev, rigour.run, rigovo.com), we may collect standard web analytics data through privacy-respecting analytics tools.</p>
+                            <h3 style={{ color: 'white', fontSize: '1.1rem', marginBottom: '0.75rem', marginTop: '1.5rem' }}>2.2 Website Visitors</h3>
+                            <p>When you visit our websites (rigour-labs.dev, rigour.run), we may collect standard web analytics data through privacy-respecting analytics tools.</p>
                         </section>
 
                         <section style={{ marginBottom: '2.5rem' }}>
@@ -67,7 +58,6 @@ export default function PrivacyPolicy() {
                             <p style={{ marginBottom: '1rem' }}>We use the information we collect to:</p>
                             <ul style={{ marginLeft: '1.5rem' }}>
                                 <li>Provide and maintain our services</li>
-                                <li>Process interview integrity assessments (Rigovo)</li>
                                 <li>Improve and optimize our products</li>
                                 <li>Communicate with you about updates and support</li>
                                 <li>Comply with legal obligations</li>
@@ -76,9 +66,6 @@ export default function PrivacyPolicy() {
 
                         <section style={{ marginBottom: '2.5rem' }}>
                             <h2 style={{ color: 'white', fontSize: '1.5rem', marginBottom: '1rem' }}>4. Data Retention</h2>
-                            <p style={{ marginBottom: '1rem' }}>
-                                <strong style={{ color: 'white' }}>Rigovo:</strong> Interview recordings and related data are retained for the duration specified in your service agreement. You may request deletion at any time.
-                            </p>
                             <p>
                                 <strong style={{ color: 'white' }}>Rigour CLI:</strong> No data is retained as no data is collected.
                             </p>
@@ -95,8 +82,7 @@ export default function PrivacyPolicy() {
                             <h2 style={{ color: 'white', fontSize: '1.5rem', marginBottom: '1rem' }}>6. Third-Party Services</h2>
                             <p style={{ marginBottom: '1rem' }}>We may use third-party services for:</p>
                             <ul style={{ marginLeft: '1.5rem' }}>
-                                <li>Cloud infrastructure (Google Cloud Platform)</li>
-                                <li>Payment processing</li>
+                                <li>Cloud infrastructure</li>
                                 <li>Analytics (privacy-respecting solutions)</li>
                             </ul>
                         </section>
@@ -134,7 +120,6 @@ export default function PrivacyPolicy() {
                             </p>
                             <p>
                                 <strong style={{ color: 'white' }}>Rigour Labs</strong><br />
-                                Email: <a href="mailto:legal@rigour.run" style={{ color: 'var(--primary)' }}>legal@rigour.run</a><br />
                                 Administrative: <a href="mailto:admin@rigour-labs.dev" style={{ color: 'var(--primary)' }}>admin@rigour-labs.dev</a>
                             </p>
                         </section>
@@ -145,3 +130,4 @@ export default function PrivacyPolicy() {
         </>
     );
 }
+

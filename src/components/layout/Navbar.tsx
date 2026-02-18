@@ -8,7 +8,6 @@ export default function Navbar() {
 
     const navLinks = [
         { href: '#products', label: 'Products' },
-        { href: '#team', label: 'Team' },
         { href: '#mission', label: 'Mission' },
         { href: '#contact', label: 'Contact' },
     ];
@@ -41,7 +40,7 @@ export default function Navbar() {
             }}>
                 <Link
                     href="/"
-                    aria-label="Rigovo - Home"
+                    aria-label="Rigour - Home"
                     style={{
                         fontSize: '1rem',
                         fontWeight: '700',
@@ -64,7 +63,7 @@ export default function Navbar() {
                         fontSize: '0.875rem',
                         flexShrink: 0
                     }} aria-hidden="true">R</span>
-                    <span className="nav-brand" style={{ letterSpacing: '0.05em', color: '#ffffff' }}>RIGOVO</span>
+                    <span className="nav-brand" style={{ letterSpacing: '0.05em', color: '#ffffff' }}>RIGOUR</span>
                 </Link>
 
                 {/* Desktop Navigation */}

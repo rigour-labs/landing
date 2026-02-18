@@ -45,7 +45,7 @@ export default function Footer() {
                             RIGOUR LABS
                         </Link>
                         <p style={{ color: 'var(--secondary)', fontSize: '0.875rem', lineHeight: '1.6', marginTop: '1rem' }}>
-                            Developer tools and SaaS products for code verification and hiring integrity.
+                            Developer tools for AI-native software verification.
                         </p>
                         <p style={{ color: 'var(--secondary)', fontSize: '0.75rem', marginTop: '0.5rem' }}>
                             Founded 2025 · Based in India
@@ -55,7 +55,6 @@ export default function Footer() {
                     <nav aria-label="Products navigation">
                         <h2 style={{ marginBottom: '1.25rem', fontSize: '1rem' }}>Products</h2>
                         <ul style={{ listStyle: 'none', padding: 0, display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
-                            <li><a href="https://rigovo.com" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--secondary)', fontSize: '0.875rem' }}>Rigovo SaaS</a></li>
                             <li><a href="https://rigour.run" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--secondary)', fontSize: '0.875rem' }}>Rigour OSS</a></li>
                             <li><a href="https://docs.rigour.run" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--secondary)', fontSize: '0.875rem' }}>Documentation</a></li>
                         </ul>

@@ -12,13 +12,12 @@ const inter = Inter({
 export const metadata: Metadata = {
   metadataBase: new URL("https://rigour-labs.dev"),
   title: {
-    default: "Rigovo | AI Co-pilot for Technical Hiring & Code Verification",
-    template: "%s | Rigovo",
+    default: "Rigour | AI-Native Software Verification",
+    template: "%s | Rigour",
   },
-  description: "We build developer tools and SaaS products. Rigovo (formerly TalentLyt) is your AI co-pilot for technical hiring—handles screening while you focus on culture fit. Rigour CLI checks AI-generated code before production. Founded 2025, based in India.",
+  description: "We build developer tools for AI-native software. Rigour CLI checks AI-generated code before production. Founded 2025.",
   keywords: [
     "Rigovo",
-    "TalentLyt",
     "Rigour CLI",
     "AI interview co-pilot",
     "AI hiring assistant",
@@ -27,26 +26,18 @@ export const metadata: Metadata = {
     "AI code verification",
     "code quality tools",
     "AI coding assistant",
-    "developer tools India",
     "npm code checker",
-    "Maya AI interviewer",
-    "candidate verification",
     "AI generated code checker",
     "code review automation",
     "static code analysis",
-    "deepfake detection hiring",
-    "proxy candidate detection",
     "MCP server",
     "Model Context Protocol",
     "GitHub App code review",
     "zero telemetry code analysis",
     "local code verification",
-    "13-signal fraud detection",
-    "technical interview integrity",
     "AI code quality gate"
   ],
   authors: [
-    { name: "Ashutosh Singh", url: "https://www.linkedin.com/in/erashu212/" },
     { name: "Rigour Labs Team" }
   ],
   creator: "Rigour Labs",
@@ -57,10 +48,10 @@ export const metadata: Metadata = {
     telephone: false,
   },
   openGraph: {
-    title: "Rigovo | Engineering Trust in AI-Native Software",
-    description: "Secure your technical hiring with Rigovo (formerly TalentLyt). 13-signal fraud detection and AI-driven screening for verifiable engineering teams.",
+    title: "Rigour | Engineering Trust in AI-Native Software",
+    description: "Secure your development workflow with Rigour CLI. Local-only AI code verification for engineering teams.",
     url: "https://rigour-labs.dev",
-    siteName: "Rigovo",
+    siteName: "Rigour Labs",
     images: [
       {
         url: "/og-image.png",
@@ -74,8 +65,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Rigovo | AI Co-pilot for Technical Hiring",
-    description: "Rigovo (formerly TalentLyt) ensures hiring integrity with 13-signal fraud detection. Built for high-growth engineering teams.",
+    title: "Rigour | AI Code Verification",
+    description: "Rigour CLI ensures code integrity with local-only analysis. Built for AI-native engineering teams.",
     images: ["/og-image.png"],
   },
   robots: {
@@ -107,25 +98,18 @@ export default function RootLayout({
     "legalName": "Rigour Labs",
     "url": "https://rigour-labs.dev",
     "logo": "https://rigour-labs.dev/logo.png",
-    "description": "We build developer tools and SaaS products for code verification and hiring integrity. Our products are Rigovo (formerly TalentLyt) for interview integrity and Rigour CLI for AI code verification.",
+    "description": "We build developer tools for code verification and hiring integrity. Our flagship products include Rigovo for interview integrity and Rigour CLI for AI code verification.",
     "foundingDate": "2025",
     "address": {
       "@type": "PostalAddress",
       "addressCountry": "IN"
     },
-    "founder": [
-      {
-        "@type": "Person",
-        "name": "Ashutosh Singh",
-        "jobTitle": "Founder",
-        "sameAs": "https://www.linkedin.com/in/erashu212/"
-      }
-    ],
     "sameAs": [
       "https://github.com/rigour-labs",
       "https://www.npmjs.com/package/@rigour-labs/cli",
       "https://github.com/mcp?search=rigour",
-      "https://github.com/apps/rigour-bot"
+      "https://github.com/apps/rigour-bot",
+      "https://rigovo.com"
     ],
     "contactPoint": {
       "@type": "ContactPoint",
@@ -140,18 +124,12 @@ export default function RootLayout({
       "@type": "SoftwareApplication",
       "name": "Rigovo",
       "applicationCategory": "BusinessApplication",
-      "operatingSystem": "Web",
-      "description": "Your AI co-pilot for technical hiring. Rigovo (formerly TalentLyt) handles screening while you focus on culture fit. Beta: 6,800+ anomalies detected, 41% fraud flag rate across 82 interviews. 13-signal fraud detection catches deepfakes and proxy candidates.",
+      "operatingSystem": "Web-based",
+      "description": "AI-driven interview integrity platform that eliminates fraud and ensures verifiable hiring processes.",
       "url": "https://rigovo.com",
       "author": {
         "@type": "Organization",
         "name": "Rigour Labs"
-      },
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "USD",
-        "description": "Beta access"
       }
     },
     {
@@ -212,7 +190,7 @@ export default function RootLayout({
         "name": "What is Rigovo?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Rigovo (formerly TalentLyt) is your AI co-pilot for technical hiring. Maya AI handles screening while your team focuses on culture fit. Beta results: 6,800+ anomalies detected, 41% fraud flag rate across 82 interviews. 13-signal fraud detection catches deepfakes and proxy candidates in real-time."
+          "text": "Rigovo is an AI-driven hiring integrity platform that uses live monitoring and anomaly detection to eliminate interview fraud and ensure technical integrity in remote hiring."
         }
       },
       {
@@ -258,12 +236,6 @@ export default function RootLayout({
         "position": 2,
         "name": "Products",
         "item": "https://rigour-labs.dev/#products"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Team",
-        "item": "https://rigour-labs.dev/#team"
       }
     ]
   };

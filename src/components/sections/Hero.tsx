@@ -77,29 +77,15 @@ export default function Hero() {
                     lineHeight: '1.6',
                     fontWeight: '400'
                 }}>
-                    Professional developer tools and autonomous SaaS designed for technical integrity. <span style={{ color: '#ffffff', fontWeight: '600' }}>Rigovo</span> handles hiring, <span style={{ color: '#ffffff', fontWeight: '600' }}>Rigour CLI</span> handles code.
+                    Professional developer tools designed for technical integrity. <span style={{ color: '#ffffff', fontWeight: '600' }}>Rigour CLI</span> handles code verification locally.
                 </p>
-
-                <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    gap: '0.75rem',
-                    marginBottom: '3.5rem',
-                    fontSize: '0.8125rem',
-                    color: 'var(--secondary)',
-                    opacity: 0.7
-                }}>
-                    <span style={{ width: '12px', height: '1px', background: 'var(--card-border)' }} />
-                    Formerly known as TalentLyt
-                    <span style={{ width: '12px', height: '1px', background: 'var(--card-border)' }} />
-                </div>
 
                 <p style={{
                     fontSize: '0.875rem',
                     color: 'var(--secondary)',
                     marginBottom: '3rem',
-                    opacity: 0.8
+                    opacity: 0.8,
+                    marginTop: '3.5rem'
                 }}>
                     Powered by <a href="https://rigour.run" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--primary)', textDecoration: 'underline', textUnderlineOffset: '2px', fontWeight: '500' }}>Rigour OSS</a> — our open-source engine for verifiable code.
                 </p>
@@ -110,10 +96,7 @@ export default function Hero() {
                     gap: '1.25rem',
                     flexWrap: 'wrap'
                 }}>
-                    <a href="https://rigovo.com" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ minWidth: '180px' }}>
-                        Rigovo SaaS
-                    </a>
-                    <a href="https://rigour.run" target="_blank" rel="noopener noreferrer" className="btn-secondary" style={{ minWidth: '180px' }}>
+                    <a href="https://rigour.run" target="_blank" rel="noopener noreferrer" className="btn-primary" style={{ minWidth: '180px' }}>
                         Explore Rigour OSS
                     </a>
                 </div>
